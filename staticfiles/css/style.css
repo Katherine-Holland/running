@@ -118,14 +118,16 @@ body {
 
 /* Homepage and Banner */
 .callout-container {
-    height: 60vh; /* Standard banner height (60% of viewport height) */
+    height: 100vh; /* Standard banner height (60% of viewport height) */
     background: url('staticfiles/images/banner.jpg') no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
-    width: 100%;
 }
 
 .opaque-overlay {
