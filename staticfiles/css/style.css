@@ -210,6 +210,13 @@ body {
  .jumbotron {
      background-color: transparent;
  }
+
+ img.img-fluid {
+    width: 100%;
+    height: auto;
+    max-height: 400px;  /* Limit the height of the banner */
+    object-fit: cover;  /* Ensure the image covers the entire width without distortion */
+}
  
  .jumbotron h1 {
      color: white;
