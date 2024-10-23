@@ -134,15 +134,11 @@ body {
     font-family: "Noto Sans SC", sans-serif;
  }
  /* Containers */
- 
- .container-wrapper {}
- 
+
  .container-wrapper--red {
      background-color:rgb(97, 107, 99, 0.7);
      color:white;
  }
- 
- .alert-container {}
  
  .callout-container {
      height: 100vh;
@@ -172,26 +168,6 @@ body {
  }   
  
  /* Navbar */
- .navalert-container {
-     position: absolute;
-     top: 0;
-     left: 0;
-     z-index: 1;
-     padding-left: 0;
-     padding-right: 0;
- }
- 
- .navbar {
-     margin-bottom: 0;
-     width: 100%;
-     background-color: rgba(0,0,0,0.5);
-     border: 0;
- }
- 
- .navbar .navbar-toggler {
-     border: 0;
- }
- 
  .navbar-brand {
      font-weight: bold;
  }
