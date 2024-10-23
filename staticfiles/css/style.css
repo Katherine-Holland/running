@@ -1,9 +1,6 @@
 /* General Styles */
 body {
     font-family: "Noto Sans SC", sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
 }
 
 /* Container Styles */
@@ -35,7 +32,6 @@ body {
     text-transform: uppercase;
 }
 
-/* Masthead Styles */
 .masthead {
     margin-top: 10px;
     overflow: hidden;
@@ -68,7 +64,6 @@ body {
     z-index: 100;
 }
 
-/* Link and Post Styles */
 .post-link {
     text-decoration: none;
     color: #445261;
@@ -126,7 +121,6 @@ body {
     height: 60vh; /* Standard banner height (60% of viewport height) */
     background: url('staticfiles/images/banner.jpg') no-repeat center center;
     background-size: cover;
-    background-attachment: fixed; /* Parallax effect enabled */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -229,14 +223,21 @@ body {
 @media (max-width: 768px) {
     .callout-container {
         height: 40vh; /* Adjust banner height for smaller screens */
-        background-attachment: scroll; /* Disable parallax for smaller devices */
+        background-attachment: scroll;
     }
 }
 
 @media (max-width: 425px) {
     .callout-container {
-        height: 100vh; /* Full height for mobile */
-        background-attachment: scroll; /* Disable parallax for mobile devices */
+        height: 100vh; /* Keep the full height for mobile */
+        background-attachment: scroll;
+    }
+}
+
+@media (max-width: 375px) {
+    .callout-container {
+        height: 100vh;
+        background-attachment: scroll;
     }
 }
 
@@ -250,7 +251,20 @@ body {
 /* Fix for iOS Devices */
 @supports (-webkit-touch-callout: none) {
     .callout-container {
-        background-attachment: scroll; /* iOS doesn't handle background-attachment: fixed well */
+        background: url('staticfiles/images/banner.jpeg') no-repeat center center;
+        background-size: cover;
+        height: 60vh;
+    }
+
+    .callout-container::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background: url('staticfiles/images/banner.jpeg') no-repeat center center;
+        background-size: cover;
+        z-index: -1;
     }
 }
-
