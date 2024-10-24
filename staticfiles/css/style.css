@@ -114,11 +114,12 @@ body {
 
 .approval {
     color: rgb(222, 146, 168);
-}
+} */
 
 /* Homepage and Banner */
 .callout-container {
     height: 30vh; 
+    top: 30;
     background: url('staticfiles/images/banner.jpg') no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -128,7 +129,7 @@ body {
     align-items: center;
     justify-content: center;
     position: relative;
-}
+} 
 
 .opaque-overlay {
     position: absolute;
@@ -213,12 +214,6 @@ body {
 
 .dropdown-item {
     color: #fff;
-}
-
-/* Footer */
-.footer {
-    background-color: #445261;
-    color: white;
 }
 
 /* Responsive Adjustments */
