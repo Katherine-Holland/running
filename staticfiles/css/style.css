@@ -118,7 +118,7 @@ body {
 
 /* Homepage and Banner */
 .callout-container {
-    height: 100vh; /* Standard banner height (60% of viewport height) */
+    height: 30vh; 
     background: url('staticfiles/images/banner.jpg') no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
