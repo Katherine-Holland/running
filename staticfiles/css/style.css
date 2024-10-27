@@ -120,7 +120,6 @@ body {
 .callout-container {
     height: 10vh; 
     top: 30;
-    background: url('staticfiles/images/banner.jpg') no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -227,21 +226,18 @@ body {
 @media (max-width: 425px) {
     .callout-container {
         height: 30vh; 
-        background-attachment: scroll;
     }
 }
 
 @media (max-width: 375px) {
     .callout-container {
         height: 30vh;
-        background-attachment: scroll;
     }
 }
 
 @media (max-width: 320px) {
     .callout-container {
         height: 30vh;
-        background-attachment: scroll;
     }
 }
 
