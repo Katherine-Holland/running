@@ -5,10 +5,6 @@
 
 <div class="container mt-5">
     <div class="row">
-         
-        <div class="col-12 col-md-4 text-center">
-            <img src="{% static 'images/nobody.jpeg' %}" class="profile-image">
-        </div>
         <div class="col-12 col-md-8">
             <h2>{{ about.title }}</h2>
             {{ about.content | safe }}
@@ -21,6 +17,7 @@
           <p class="text-end"><em>Updated on: {{ about.updated_on }}</em></p>
         </div>
     </div>
+    <hr class="block-divider block-divider--green">
     <div class="row justify-content-center">
         <div class="col-12 col-md-6 my-5">
             <h2>Find out More!</h2>
