@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
     
 </head>
-
+    <main>
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light bg-white">
         <div class="container-fluid">
@@ -60,7 +60,9 @@
             </div>
         </div>
     </nav>
-    
+    <br>
+    </main>
+    <body>
         <!--</nav>-->
             <div class="container-fluid callout-container">
                 <!-- Callout -->
@@ -72,7 +74,7 @@
                             <h1 class="jumbotron-header">Guided Trail Running</h1>
                             <hr class="block-divider block-divider--green">
                             <p class="lead"> Run with trained guides across trails.</p>
-                            <button class="btn btn-lg btn--cta btn--red">Book</button>
+                            <button class="btn btn-lg btn--cta btn--red" href="{% url 'about' %}">Book</button>
                         </section>  
                     </div>
                 </div>
@@ -96,8 +98,6 @@
         <!-- Content Goes here -->
          
         {% endblock content %}
-
-    </main>
 
     <!-- Footer -->
     <footer class="footer mt-auto py-3 dark-bg">
