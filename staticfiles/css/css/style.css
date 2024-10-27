@@ -91,6 +91,10 @@ body {
     z-index: 100;
 }
 
+.profile-image {
+    width:75%;
+}
+
 .post-link {
     text-decoration: none;
     color: #445261;
@@ -98,7 +102,7 @@ body {
 
 .post-link:hover,
 .page-link {
-    color: #E84610;
+    color: #185b3c;
 }
 
 .post-title {
