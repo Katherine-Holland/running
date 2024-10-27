@@ -264,48 +264,25 @@ body {
 @media (max-width: 768px) {
     .callout-container {
         height: 30vh; 
-        background-attachment: scroll;
     }
 }
 
 @media (max-width: 425px) {
     .callout-container {
         height: 30vh; 
-        background-attachment: scroll;
     }
 }
 
 @media (max-width: 375px) {
     .callout-container {
         height: 30vh;
-        background-attachment: scroll;
     }
 }
 
 @media (max-width: 320px) {
     .callout-container {
         height: 30vh;
-        background-attachment: scroll;
     }
 }
 
-/* Fix for iOS Devices */
-@supports (-webkit-touch-callout: none) {
-    .callout-container {
-        background: url('staticfiles/images/banner.jpeg') no-repeat center center;
-        background-size: cover;
-        height: 30vh;
-    }
 
-    .callout-container::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 30vh;
-        width: 100%;
-        background: url('staticfiles/images/banner.jpeg') no-repeat center center;
-        background-size: cover;
-        z-index: -1;
-    }
-}
