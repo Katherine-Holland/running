@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
     
 </head>
-    <main>
+<body class="d-flex flex-column h-100 main-bg"></body>
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light bg-white">
         <div class="container-fluid">
@@ -61,7 +61,6 @@
         </div>
     </nav>
     <br>
-    <body>
         <!--</nav>-->
             <div class="container-fluid callout-container">
                 <!-- Callout -->
@@ -93,11 +92,12 @@
                 </div>
                 </div>
             </div>
+    <main class="flex-shrink-0 main-bg">
         {% block content %}
         <!-- Content Goes here -->
          
         {% endblock content %}
-
+    </main>
     <!-- Footer -->
     <footer class="footer mt-auto py-3 dark-bg">
         <p class="m-0 text-center text-white">Made by Runners for Runners</p>
@@ -114,7 +114,5 @@
 
     {% block extras %}
     {% endblock %}
-</body>
-</main>
 
 </html>
