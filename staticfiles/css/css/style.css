@@ -91,10 +91,6 @@ body {
     z-index: 100;
 }
 
-.profile-image {
-    width:25%;
-}
-
 .post-link {
     text-decoration: none;
     color: #445261;
@@ -178,15 +174,6 @@ body {
     justify-content: center;
     position: relative;
 } 
-/*
-.opaque-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay for text readability 
-}  */
 
 .jumbotron {
     background-color: transparent;
