@@ -131,7 +131,7 @@ clear top navigation
 
 ## Color Palette
 
-The main colors I went with for this project are as follows:
+I chose a simple colour scheme of greys and greens to match the feel of the environment found in Trail Running. This simple design also helped the user to navigate easily around the site.
 
 
 
@@ -164,12 +164,12 @@ The main colors I went with for this project are as follows:
 
 ## Browser Compatibility
 
-- The site works as intended on Google Chrome and Safari. No issuses were reported. 
+The site works as intended on Google Chrome and Safari.
 
 
 ## Validations
 
-- HTML Validation
+HTML Validation
 
 | Directory  | File                    | Result |
 |------------|-------------------------|--------|
@@ -177,10 +177,10 @@ The main colors I went with for this project are as follows:
 | blog       | edit_post.html          | PASS   |
 | blog       | post_detail.html        | PASS   |
 | blog       | post_list.html          | PASS   |
-| home       | home.html | PASS   |
+| home       | home.html               | PASS   |
 | signup     | login.html              | PASS   |
 | signup     | logout.html             | PASS   |
-| signup     | signup.html             |  |
+| signup     | signup.html             | PASS   |
 
 - JavaScript validation
 
