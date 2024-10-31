@@ -152,10 +152,55 @@ body {
     border: none;
 }
 
+.button-group {
+    display: flex;
+    gap: 10px; /* Adjust space between buttons */
+}
+
 .faded {
     color: rgb(172, 175, 175);
 }
 
 .approval {
     color: rgb(222, 146, 168);
+}
+
+.greeting h1 {
+    font-size: 0.9rem;
+    color: #188181;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.weather-info {
+    font-size: 0.5rem;
+    color: #188181;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
+
+.typewriter {
+    font-family: 'Courier Prime', monospace;
+    white-space: nowrap;  /* stops line breaks for the animation */
+    overflow: hidden;     /* hides text as it's "typing" */
+    /*display: inline-block;*/
+    animation: typing 3s steps(30, end), blink-caret 0.5s step-end infinite;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink-caret {
+    from, to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: black;
+    }
 }

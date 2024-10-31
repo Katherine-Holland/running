@@ -65,6 +65,9 @@
     <br>
         <!--</nav>-->
             <div class="container-fluid callout-container">
+                <div class="greeting">
+                    <h1 class="typewriter">{{ greeting }} - Don't forget to check out the chat in our blog!</h1>
+                </div>
                 <!-- Callout -->
                 <div class="row">
                     <div class="col-12"> 
@@ -74,7 +77,10 @@
                             <h1 class="jumbotron-header">Guided Trail Running</h1>
                             <hr class="block-divider block-divider--green">
                             <p class="lead"> Join the Trail Running community blog! Find out more about us and run with trained guides across trails.</p>
-                            <p><a class="btn btn-sm btn-light" href="{% url 'about' %}">Book a Holiday!</a></p>
+                            <div class="button-group">
+                                <a class="btn btn-sm btn-light" href="{% url 'about' %}">Book a Holiday!</a>
+                                <a class="btn btn-sm btn-light" href="{% url 'blog-home' %}">Read the Blog!</a>
+                            </div>
                         </section> 
                     </div> 
                 </div>
