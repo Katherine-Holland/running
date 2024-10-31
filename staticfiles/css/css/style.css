@@ -1,4 +1,4 @@
-/*body {
+body {
     background-color: #F9FAFC;
 }
 
@@ -159,8 +159,9 @@
 .approval {
     color: rgb(222, 146, 168);
 }
+    
 
-/* Homepage and Banner */
+/* Homepage and Banner 
 .callout-container {
     height: 10vh; 
     top: 30;
@@ -184,7 +185,7 @@
 }
 
 .jumbotron h1 {
-    font-size: 3rem; /* Responsive text size */
+    font-size: 3rem; /* Responsive text size 
     color: white;
     font-weight: bold;
     margin-bottom: 30px;
@@ -202,7 +203,7 @@
     color: #d0d0d0;
 }
 
-/* Button Styles */
+/* Button Styles 
 .btn--cta {
     font-weight: bold;
     border-radius: 23px;
@@ -222,7 +223,7 @@
     color: white;
 }
 
-/* Block Dividers */
+/* Block Dividers 
 .block-divider {
     width: 75px;
     height: 5px;
@@ -237,7 +238,7 @@
     width: 35px;
 }
 
-/* Navbar */
+/* Navbar 
 .navbar-brand {
     font-weight: bold;
 }
@@ -251,7 +252,7 @@
     color: #fff;
 }
 
-/* Responsive Adjustments */
+/* Responsive Adjustments 
 @media (max-width: 768px) {
     .callout-container {
         height: 30vh; 

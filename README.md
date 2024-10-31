@@ -202,8 +202,10 @@ Directory	File	Result
 | blog     	| models.py   	|   	|
 | blog     	| urls.py     	|   	|
 | blog     	| views.py    	|   	|
-|          	|             	|       	|
-|          	|             	|       	|
+|          	|             	|       |
+| running   | settings.py   |FAIL (line too long)|
+| running   | urls.py.      |PASS                |
+
 | home     	| __init__.py 	| 
 | home     	| admin.py    	|   	|
 | home     	| apps.py     	| 	|
