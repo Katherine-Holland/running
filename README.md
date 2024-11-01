@@ -3,9 +3,20 @@
 ![Responsive image here](static/images/moors.jpeg)
 
 Take a look at the deployed site here: [Guided Trail Running](https://trailrunning-f565347cbca0.herokuapp.com).
-Take a look at the code in Gitpod:
-Click the **Open in Gitpod** button to launch this repository in Gitpod, a cloud-based development environment. This will automatically set up and open the project, allowing you to start coding right away:
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/Katherine-Holland/running.git)
+
+### Getting Started
+
+#### Forking the Repository
+1. Go to the GitHub repository: [![Open in GitHub]](https://github.com/Katherine-Holland/running).
+2. Click the **Fork** button in the upper right corner of the page to create a copy of the repository under your own GitHub account.
+3. After forking, you can open it in Gitpod using the button above.
+
+#### Cloning the Repository
+If you are working locally, you can clone the repository:
+1. Open your terminal or command prompt.
+2. Run the following command to clone the repository:
+   ```bash
+   git clone https://github.com/Katherine-Holland/running.git
 
 # Project Aim
 
