@@ -5,7 +5,7 @@
 Take a look at the deployed site here: [Guided Trail Running](https://trailrunning-f565347cbca0.herokuapp.com).
 
 
-# Project Aim
+# Project Summary
 
 Guided Trail Running is a blog for like minded trail runners to come together and discuss trail running. The blog also acts as a marketing tool to allow the site owner to encourage runners to sign up to their guided running holidays. The site is designed to grow into an informative resource for trail runners.
 
@@ -34,6 +34,7 @@ Name your repository and add an optional description.
 Choose the repository's visibility, for this assessed project I chose 'public'.
 Initialize the repository with a README and .gitignore.
 Click 'Create repository'.
+
 ### Step 2: Open the IDE.
 I used Gitpod for this project and loaded the project in Gitpod via the link found by clicking the green 'code' button, located at the top right of the repository.
 
@@ -157,7 +158,7 @@ I added in a welcome message to the top of the banner which changes greeting bas
 
 A weather report for the Lake District also features at the bottom of the page. The purpose of this is to inform users of the site as to the weather conditions in that area and if it is suitable (and safe) weather for a run.
 
-## Navbar
+### Navbar
 The navbar includes links to the Home page, About Page, Register, Log In (or Log Out) and Blog. This simple layout makes the site simple to navigate. On mobile screens this also assists the user to find the correct page quickly under the bar icon.
 
 ### About and CRUD Functionality
@@ -339,7 +340,7 @@ Directory	File	Result
 Lighthouse testing was successful for all pages, meeting accessibility requirements.
 ![Lighthouse Test](static/images)
 
-# Bugs
+## Bugs
 1. Using the dev tools I noticed an error for get element by id was null for editing a post. I realised that get attribute was not complete.
 
 # Credits
@@ -371,9 +372,10 @@ If you are working locally, you can clone the repository:
    ```bash
    git clone https://github.com/Katherine-Holland/running.git
 3. Navigate to the directory:
-Use this terminal command:
+   ```bash
     cd running
-You can then set up your environment and run the project locally.
+    
+4. You can then set up your environment and run the project locally.
 
 #### Clone the Repository - Alternative Method
 
@@ -382,12 +384,12 @@ You can then set up your environment and run the project locally.
     ```bash
     git clone https://github.com/Katherine-Holland/running.git
 
-    Replace <URL> with the URL you copied from GitHub, 
+2. Replace <URL> with the URL you copied from GitHub, 
     which should look like https://github.com/Katherine-Holland/running.git.
-    Navigate to the Project Directory.
 
+3. Navigate to the Project Directory.
     After cloning, navigate into the project directory by running:
-
+    ```bash
     cd repository-name
 
 2. Install Project Dependencies
@@ -399,87 +401,81 @@ Follow the instructions in the repository for running the project locally using 
 ### Deploying the project with Heroku
 Here's how to deploy your Django project from Gitpod to Heroku. You’ll need to have a Heroku account and the Heroku CLI installed in Gitpod. Here are the steps:
 
-Step 1: Install Gunicorn
+1. Install Gunicorn
+   In your Gitpod terminal, install Gunicorn (a WSGI server for serving your app) and Django-Heroku (for configuring Heroku settings automatically):
+    ```bash
+    pip install gunicorn django-heroku
 
-In your Gitpod terminal, install Gunicorn (a WSGI server for serving your app) and Django-Heroku (for configuring Heroku settings automatically):
+2. Update requirements.txt
+   Make sure to add these new dependencies to your requirements.txt file. Update it with:
+   ```bash
+    pip freeze > requirements.txt
 
-```bash
-pip install gunicorn django-heroku
+3. Configure settings.py for Heroku
+   Import django_heroku at the top of your settings file:
+    ```python
+    import django_heroku
 
-Step 2: Update requirements.txt
+4. At the bottom of your settings.py file, add:
+    ```python
+    django_heroku.settings(locals())
 
-Make sure to add these new dependencies to your requirements.txt file. Update it with:
+4. Create a Procfile
+   In the root directory of your project, create a file named Procfile (no file extension) to tell Heroku how to run your application:
+    ```plaintext
+    web: gunicorn your_project_name.wsgi --log-file -
+    Replace your_project_name with the name of your Django project directory.
 
-```bash
-pip freeze > requirements.txt
+5. Commit Changes
+   Save your changes, add them to Git, and commit:
+   ```bash
+   git add .
+   git commit -m "Prepare project for Heroku deployment"
 
-Step 3: Configure settings.py for Heroku
+6. Log in to Heroku
+   Log in to Heroku from your Gitpod terminal:
+   ```bash
+   heroku login -i
 
-Import django_heroku at the top of your settings file:
-```python
-import django_heroku
+7. Create a New Heroku App
+   Run the following command to create a new app:
+   ```bash
+   heroku create your-app-name
 
-At the bottom of your settings.py file, add:
-```python
-django_heroku.settings(locals())
-
-Step 4: Create a Procfile
-
-In the root directory of your project, create a file named Procfile (no file extension) to tell Heroku how to run your application:
-
-```plaintext
-web: gunicorn your_project_name.wsgi --log-file -
-Replace your_project_name with the name of your Django project directory.
-
-Step 5: Commit Changes
-
-Save your changes, add them to Git, and commit:
-```bash
-git add .
-git commit -m "Prepare project for Heroku deployment"
-
-Step 6: Log in to Heroku
-
-Log in to Heroku from your Gitpod terminal:
-```bash
-heroku login -i
-
-Step 7: Create a New Heroku App
-
-Run the following command to create a new app:
-```bash
-heroku create your-app-name
 Replace your-app-name with a unique name for your app.
 
-Step 8: Set Up Environment Variables
+8. Set Up Environment Variables
+   In Gitpod, set up your environment variables for any secrets like SECRET_KEY or API keys:
+   ```bash
+    heroku config:set SECRET_KEY=your_secret_key
+    heroku config:set DEBUG=False
+    Replace your_secret_key with your actual secret key.
 
-In Gitpod, set up your environment variables for any secrets like SECRET_KEY or API keys:
-```bash
-heroku config:set SECRET_KEY=your_secret_key
-heroku config:set DEBUG=False
-Replace your_secret_key with your actual secret key.
+9. Push to Heroku
+   Push your code to Heroku to deploy:
+   ```bash
+   git push heroku main
 
-Step 9: Push to Heroku
+10. Run Database Migrations
+    Run migrations to set up your database:
+    ```bash
+   heroku run python manage.py migrate
 
-Now, push your code to Heroku to deploy:
-```bash
-git push heroku main
+11. Create a Superuser
+    To access the admin panel, I created a superuser:
+    ```bash
+    heroku run python manage.py createsuperuser
 
-Step 10: Run Database Migrations
+12. Create superuser credentials
+I then selected a username and password.
 
-Run migrations to set up your database:
-```bash
-heroku run python manage.py migrate
+12. Open Your App
+    Open your deployed app with:
+    ```bash
+    heroku open
 
-Step 11: Create a Superuser (I created a SuperUser)
+### Alternative way to deploy using Heroku
 
-To access the admin panel, I created a superuser:
-```bash
-heroku run python manage.py createsuperuser
-
-Step 12: Open Your App
-
-Open your deployed app with:
-```bash
-heroku open
-
+1. Commit all changes from Gitpod to Github and sync.
+2. Go to the deployment tab on the Heroku dashboard and click 'Deploy' (I deployed manually).
+3. Once successfully deployed, you will have the option to open the site in a new browser.
