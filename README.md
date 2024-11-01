@@ -6,7 +6,7 @@ Take a look at the deployed site here [Guided Trail Running](https://trailrunnin
 
 # Project Aim
 
-Guided Trail Running is a blog for like minded trail runners to come together and discuss trail running. The blog also acts as a marketing tool to allow the site owner to encourage runners to sign up to their guided running holidays. The site is designed to be an informative resource for trail runners.
+Guided Trail Running is a blog for like minded trail runners to come together and discuss trail running. The blog also acts as a marketing tool to allow the site owner to encourage runners to sign up to their guided running holidays. The site is designed to grow into an informative resource for trail runners.
 
 
 # User Experience (UX)
@@ -274,5 +274,6 @@ Directory	File	Result
 
 
 # Future features 
--Social sign in
--Booking feature to allow users to book holidays.
+- Social sign in
+- Booking feature to allow users to book holidays, with a seperate "about" page.
+- A more comprehensive weather outlook.
