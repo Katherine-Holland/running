@@ -99,9 +99,8 @@
                     <p>Temperature: {{ weather.main.temp }}°C</p>
                     <p>Description: {{ weather.weather.0.description }}</p>
                     <!-- Add the weather icon -->
-                    <img src="http://openweathermap.org/img/wn/{{ weather.icon_code }}@2x.png" alt="{{ weather.weather.0.description }}">
+                    <img src="https://openweathermap.org/img/wn/{{ weather.icon_code }}@2x.png" alt="{{ weather.weather.0.description }}">
                 </div>
-                {% else %}
                 <p>Weather information not available.</p>
             {% endif %}
 {% endblock content %}     

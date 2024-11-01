@@ -145,6 +145,12 @@ body {
     background: #E84610;
 }
 
+.button-group {
+    display: flex;
+    gap: 10px; /* Adjust space between buttons */
+    justify-content: center;
+}
+
 .btn-like:hover,
 .btn-like:active {
     color: #185b3c;
