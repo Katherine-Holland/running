@@ -17,6 +17,7 @@ If you are working locally, you can clone the repository:
 2. Run the following command to clone the repository:
    ```bash
    git clone https://github.com/Katherine-Holland/running.git
+   
    and navigate to the directory using this command in the terminal:
    cd running
 
