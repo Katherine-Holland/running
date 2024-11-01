@@ -33,7 +33,7 @@ ALLOWED_HOSTS = [
     '8000-katherinehollan-running-nmrbbf4vv39.ws-eu116.gitpod.io', 
     'trailrunning-f565347cbca0.herokuapp.com', 
     '.herokuapp.com'
-    ]
+]
 
 
 # Application definition
