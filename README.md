@@ -161,24 +161,46 @@ A weather report for the Lake District also features at the bottom of the page. 
 The navbar includes links to the Home page, About Page, Register, Log In (or Log Out) and Blog. This simple layout makes the site simple to navigate. On mobile screens this also assists the user to find the correct page quickly under the bar icon.
 
 ### About and CRUD Functionality
-The About page features information about the site owner who organises the trail running holidays. Below this is the contact form to find out more about booking a holiday. The form asks for the fields: Name, Email and Message. The user then clicks the 'Submit' button and a pop up states 'We have received your booking request! We will respond shortly.' This reassures the site user that the form has been successfully submitted.
+The About page features information about the site owner who organises the trail running holidays. 
+
+Below this is the contact form to find out more about booking a holiday. 
+
+The form asks for the fields: Name, Email and Message. The user then clicks the 'Submit' button and a pop up states 'We have received your booking request! We will respond shortly.' This reassures the site user that the form has been successfully submitted.
+
 The form also requires that all fields are filled out and requests that the user does so, if the field is left empty. The user also has to provide a valid email address, or the user is asked to 'please provide an '@' in the email address.'
 
-## Register and CRUD Functionality
-The Register page features a sign up form which requests a 'Username', 'email (which is an optional field)' a 'password' and a 'password again' field. I have kept this form simple as it speeds up the sign up process and gets users engaging with the community quickly which should help to keep users on the site for longer. If a user makes an error a message is generated to ask them to for example, to create a username with the rules in place for doing so. Upon registering the user sees a 'Successfully signed in as... (their username)'. The top navigation then switches from "Log In' to 'Log Out'.
+### Register and CRUD Functionality
+The Register page features a sign up form which requests a 'Username', 'email (which is an optional field)' a 'password' and a 'password again' field.
+
+I have kept this form simple as it speeds up the sign up process and gets users engaging with the community quickly which should help to keep users on the site for longer. 
+
+If a user makes an error a message is generated to ask them to for example, to create a username with the rules in place for doing so. Upon registering the user sees a 'Successfully signed in as... (their username)'. The top navigation then switches from "Log In' to 'Log Out'.
+
 To help the user experience, there is also a link to the 'sign in', if the user already has an account.
 
-## Login, Log Out and CRUD Functionality
-The login page has two fields, 'username' and 'password' plus a tick box for 'Remember Me'. There is also a link to the register page in case the user does not have an account yet. If a user tries to sign in without a valid username then the user sees a message saying 'The username and/or password you specified are not correct.'
+### Login, Log Out and CRUD Functionality
+The login page has two fields, 'username' and 'password' plus a tick box for 'Remember Me'. 
+There is also a link to the register page in case the user does not have an account yet. 
 
-If the user wants to log out, they simply click Logout in the Nav bar. This action then generates a message to the user asking: 'Sign Out. Are you sure you want to sign out?', followed by the 'Sign Out' button. Upon clicking this sign out button the user then sees a message saying: 'You have signed out.'.
+If a user tries to sign in without a valid username then the user sees a message saying 'The username and/or password you specified are not correct.'
 
-## Blog and CRUD Functionality
-A signed out user can see all of the blog posts and comments but also sees a message which says: 'Log in to leave a comment'. The user cannot leave a comment until they register or sign in with an existing account.
-A signed in user can see all of the blog posts and comments alongside a box with the title 'Leave a Comment" and a 'bosy' field which must be filled in to allow the user to click the 'Submit' button. If the body field is left blank and the user clicks 'submit' then a message appears asking the user to ' please fill in this field'. 
+If the user wants to log out, they simply click Logout in the Nav bar. 
+This action then generates a message to the user asking: 'Sign Out. Are you sure you want to sign out?', followed by the 'Sign Out' button. 
+Upon clicking this sign out button the user then sees a message saying: 'You have signed out.'.
+
+### Blog and CRUD Functionality
+A signed out user can see all of the blog posts and comments but also sees a message which says: 'Log in to leave a comment'. 
+The user cannot leave a comment until they register or sign in with an existing account.
+
+A signed in user can see all of the blog posts and comments alongside a box with the title 'Leave a Comment" and a 'bosy' field which must be filled in to allow the user to click the 'Submit' button. 
+If the body field is left blank and the user clicks 'submit' then a message appears asking the user to ' please fill in this field'. 
 The comment option also features the username of the person submitting the comment. 
-After submission, the user sees a message saying 'Comment submitted and awaiting approval'. The user then has the option to press a 'delete' or an 'edit' button and their comment can be seen above this in a faded colour with the additional message 'This comment is awaiting approval'. 
+
+After submission, the user sees a message saying 'Comment submitted and awaiting approval'. 
+The user then has the option to press a 'delete' or an 'edit' button and their comment can be seen above this in a faded colour with the additional message 'This comment is awaiting approval'. 
+
 If the user edits their comment and submits it again, they then receive a notification saying 'Comment Updated!'.
+
 If the user clicks on 'delete' they see a pop up asking: 'Delete comment? Are you sure you want to delete your comment? This action cannot be undone.' and an option to 'Close' or 'Delete'. If deleted the user sees a message saying : 'Comment deleted!'.
 
 ## Technologies Used
@@ -189,23 +211,30 @@ If the user clicks on 'delete' they see a pop up asking: 'Delete comment? Are yo
 
 - Heroku was used for deployment.
 
-- GitHub was used for storing all of my files and READme. 
+- GitHub was used for storing the Repository and READme. 
 
 - Git was used for version control --> "git add . " --> "git commit -m "**message**" --> "git push".
 
 - [Google Fonts was used to import fonts for the project.](https://fonts.google.com/) 
 
-- [PostgreSQL from Code Institute](https://dbs.ci-dbs.net/).
+- [PostgreSQL supplied by the Code Institute](https://dbs.ci-dbs.net/).
 
-- [The Code Institute database maker was also used](https://dbs.ci-dbs.net/).
+- [The Code Institute database maker](https://dbs.ci-dbs.net/).
 
 - [Cloudinary](https://cloudinary.com/).
 
 - Django Aullauth was used for handling the forms and allowing users to register and sign in.
 
+-[Django Crispy Forms](https://django-crispy-forms.readthedocs.io/en/latest/) 
+
+- [Whitenoise](https://whitenoise.readthedocs.io/en/latest/index.html) (A pip package that allows you to configure your Django project to serve its own staticfiles so it can deploy anywhere without depending on service providers.)
+
+- Bootstrap
+
 # Website Design
 
 ## Typography
+
 
 ## Color Palette
 
@@ -366,3 +395,91 @@ Make sure to install any project dependencies as specified in the repository’s
 
 3. Running the Project
 Follow the instructions in the repository for running the project locally using Django. This project uses: python manage.py runserver.
+
+### Deploying the project with Heroku
+Here's how to deploy your Django project from Gitpod to Heroku. You’ll need to have a Heroku account and the Heroku CLI installed in Gitpod. Here are the steps:
+
+Step 1: Install Gunicorn
+
+In your Gitpod terminal, install Gunicorn (a WSGI server for serving your app) and Django-Heroku (for configuring Heroku settings automatically):
+
+```bash
+pip install gunicorn django-heroku
+
+Step 2: Update requirements.txt
+
+Make sure to add these new dependencies to your requirements.txt file. Update it with:
+
+```bash
+pip freeze > requirements.txt
+
+Step 3: Configure settings.py for Heroku
+
+Import django_heroku at the top of your settings file:
+```python
+import django_heroku
+
+At the bottom of your settings.py file, add:
+```python
+django_heroku.settings(locals())
+
+Step 4: Create a Procfile
+
+In the root directory of your project, create a file named Procfile (no file extension) to tell Heroku how to run your application:
+
+```plaintext
+web: gunicorn your_project_name.wsgi --log-file -
+Replace your_project_name with the name of your Django project directory.
+
+Step 5: Commit Changes
+
+Save your changes, add them to Git, and commit:
+```bash
+git add .
+git commit -m "Prepare project for Heroku deployment"
+
+Step 6: Log in to Heroku
+
+Log in to Heroku from your Gitpod terminal:
+```bash
+heroku login -i
+
+Step 7: Create a New Heroku App
+
+Run the following command to create a new app:
+```bash
+heroku create your-app-name
+Replace your-app-name with a unique name for your app.
+
+Step 8: Set Up Environment Variables
+
+In Gitpod, set up your environment variables for any secrets like SECRET_KEY or API keys:
+```bash
+heroku config:set SECRET_KEY=your_secret_key
+heroku config:set DEBUG=False
+Replace your_secret_key with your actual secret key.
+
+Step 9: Push to Heroku
+
+Now, push your code to Heroku to deploy:
+```bash
+git push heroku main
+
+Step 10: Run Database Migrations
+
+Run migrations to set up your database:
+```bash
+heroku run python manage.py migrate
+
+Step 11: Create a Superuser (I created a SuperUser)
+
+To access the admin panel, I created a superuser:
+```bash
+heroku run python manage.py createsuperuser
+
+Step 12: Open Your App
+
+Open your deployed app with:
+```bash
+heroku open
+
