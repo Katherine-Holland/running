@@ -5,7 +5,7 @@
 Take a look at the deployed site here: [Guided Trail Running](https://trailrunning-f565347cbca0.herokuapp.com).
 Take a look at the code in Gitpod:
 Click the **Open in Gitpod** button to launch this repository in Gitpod, a cloud-based development environment. This will automatically set up and open the project, allowing you to start coding right away:
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://github.com/Katherine-Holland/running)
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://github.com/Katherine-Holland/running.git)
 
 # Project Aim
 
