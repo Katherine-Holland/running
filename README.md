@@ -7,7 +7,7 @@ Take a look at the deployed site here: [Guided Trail Running](https://trailrunni
 ### Getting Started
 
 #### Forking the Repository
-1. Go to the GitHub repository: [![Open in GitHub]](https://github.com/Katherine-Holland/running).
+1. Go to the GitHub repository: [Open in GitHub](https://github.com/Katherine-Holland/running).
 2. Click the **Fork** button in the upper right corner of the page to create a copy of the repository under your own GitHub account.
 3. After forking, you can open it in Gitpod using the button above.
 
