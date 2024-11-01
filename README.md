@@ -62,34 +62,24 @@ The issue will now appear in your board’s 'To do' list.
 
 ## Step 5: Manage Workflow with Agile Methodology
 
-Prioritize the Backlog: Review and prioritize the issues in the Backlog column based on your project’s needs (use MoSCoW prioritization here if it applies).
-Move Issues Through the Board:
-At the start of each sprint or iteration, move items from Backlog to To Do.
-As team members start working on an issue, drag it to In Progress.
-When an issue is ready for review, move it to In Review.
-After successful review and testing, move the issue to Done.
-Track Progress: Monitor the board daily to see the status of each task, ensuring work is progressing according to plan.
-Close Issues When Complete: Once an issue is in the Done column and confirmed complete, close the issue in GitHub to keep the backlog manageable.
+I prioritised the issues in the To Do list (using MoSCoW prioritization - see below).
+I then moved Issues through the Kanban Board from 'To Do' - 'In Progress' - 'Done' - 'Closed'. I specifically focused on the blog for this task as I was new to this way of working and used the Code Institute Blog walkthrough to assist me in understanding the workflow process.
 
 ## MoSCoW Prioritization
-
+MoSCoW prioritization is a technique used to categorize project requirements into levels of importance. This prioritization helps focus development efforts on what will deliver the most value and keeps the project on track. 
 - I used MoSCoW prioritization to rank how essential each feature would be. See image below for my user stories and how I labelled them. 
 
 ![MoSCoW Prioritization](static/images/)
+Here are a list of the labels. I used the 'Must-Have' and 'Should-Have' in my project. 
+Must-Have: These are essential features without which the project would be incomplete or fail to meet its core purpose. For my project this included for example, the ability to create and view posts.
 
-MoSCoW prioritization is a technique used to categorize project requirements into levels of importance. Each letter represents a different priority:
+Should-Have: These features are important but not essential for a working release. They add significant value but won’t stop the project from functioning if left out. For instance, I added a weather integration feature and a welcome message which wasn't essential but enhanced the user experience.
 
-Must-Have: These are essential features without which the project would be incomplete or fail to meet its core purpose. For your site, this might include basic navigation, user authentication, and the ability to create and view posts.
-
-Should-Have: These features are important but not essential for a working release. They add significant value but won’t stop the project from functioning if left out. For instance, you might classify the weather integration feature as a "Should-Have" if it's not central to your app's primary function.
-
-Could-Have: These are desirable features that would enhance user experience but are not critical. They might be planned for a later release if there is time. Examples could be additional styling elements, an animated typewriter effect, or extra filters in your blog view.
-
-Won't-Have (for now): These features are acknowledged but intentionally deferred for a later phase. This could include advanced search features or more complex social login options.
-
-This prioritization helps focus development efforts on what will deliver the most value and keeps the project on track. 
+Other labels I will use for future projects include:
+'Could-Have': These are desirable features that would enhance user experience but are not critical and 'Won't-Have' (for now): These features are acknowledged but intentionally deferred for a later phase. This could include advanced search features or more complex social login options. A feature I would like to add in later iterations.
 
 ## User Stories
+Here are the User Stories I focused on in order to learn how to work within the Agile methodology.
 
 1. Open a post
 As a site user I can click on a post so that I can read the full text.
@@ -119,6 +109,7 @@ AC2 Given a logged in user, they can delete their comment.
 
 6. Manage Posts
 As a Site Admin I can create, read, update and delete posts so that I can manage my blog content.
+
 AC1 Given a logged in user, they can create a blog post.
 AC2 Given a logged in user, they can read a blog post.
 AC3 Given a logged in user, they can update a blog post.
@@ -126,11 +117,13 @@ AC4 Given a logged in user, they can delete a blog post.
 
 7. Create Drafts
 As a Site Admin I can create draft posts so that I can finish writing the content later.
+
 AC1 Given a logged in user, they can save a draft blog post.
 AC2 Then they can finish the content at a later time.
 
 8. Approve Comments
 As a Site Admin I can approve or disapprove comments so that I can filter out objectionable comments.
+
 AC1 Given a logged in user, they can approve a comment.
 AC2 Given a logged in user, they can disapprove a comment.
 
@@ -139,10 +132,12 @@ As a User I can view a paginated list of posts so that I can discover the post I
 
 10. Create a Contact Us form
 As a Potential Customer, I can send the site owner a message so that I can find out more about the holidays and potentially book.
+
 AC1 A user can submit a request for more information without logging in.
 AC2 A user can see a confirmation message that the submission has been successful.
 
 As a Site Owner, I can store booking messages in the database so I can review them and respond.
+
 AC1 A Site Owner can see the booking messages in the admin area.
 AC2 A Site Owner can mark messages as "read" to allow for processing unread messages and avoiding missing requests.
 
