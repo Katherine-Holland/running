@@ -308,8 +308,8 @@ Directory	File	Result
 | blog     	| urls.py     	|   	|
 | blog     	| views.py    	|   	|
 |          	|             	|       |
-| running   | settings.py   |FAIL (line too long)|
-| running   | urls.py.      |PASS                |
+| running   | settings.py   | PASS |
+| running   | urls.py.      | PASS                |
 
 | home     	| __init__.py 	| 
 | home     	| admin.py    	|   	|
