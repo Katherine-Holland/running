@@ -21,7 +21,7 @@ I kept the navigation simple and intuitive as this was my first project using Dj
 ## Target Audience
 The target audience are both people new to trail running and those with trail running experience. The audience for trail running holidays is usually mixed, however, more women tend to sign up to holidays and the site reflects this, with images of groups of people and women represented in the images presented.
 
-## Planning
+# Planning
 I created ERD diagrams and planned the site layout. I used Balsamiq to create wireframes. I then created a Repository in GitHub and set up GitHub Issues and created a Kanban Board following an Agile methodology. The steps are below:
 
 ## Creating a Repo in GitHub
@@ -71,15 +71,17 @@ I then moved Issues through the Kanban Board from 'To Do' - 'In Progress' - 'Don
 ## MoSCoW Prioritization
 MoSCoW prioritization is a technique used to categorize project requirements into levels of importance. This prioritization helps focus development efforts on what will deliver the most value and keeps the project on track. 
 - I used MoSCoW prioritization to rank how essential each feature would be. See image below for my user stories and how I labelled them. 
+- I used the 'Must-Have' and 'Should-Have' in my project:
 
-![MoSCoW Prioritization](/)
-Here are a list of the labels. I used the 'Must-Have' and 'Should-Have' in my project. 
 Must-Have: These are essential features without which the project would be incomplete or fail to meet its core purpose. For my project this included for example, the ability to create and view posts.
 
 Should-Have: These features are important but not essential for a working release. They add significant value but won’t stop the project from functioning if left out. For instance, I added a weather integration feature and a welcome message which wasn't essential but enhanced the user experience.
 
 Other labels I will use for future projects include:
-'Could-Have': These are desirable features that would enhance user experience but are not critical and 'Won't-Have' (for now): These features are acknowledged but intentionally deferred for a later phase. This could include advanced search features or more complex social login options. A feature I would like to add in later iterations.
+
+'Could-Have': These are desirable features that would enhance user experience but are not critical.
+
+'Won't-Have' (for now): These features are acknowledged but intentionally deferred for a later phase. This could include advanced search features or more complex social login options. A feature I would like to add in later iterations.
 
 ## User Stories
 Here are the User Stories I focused on in order to learn how to work within the Agile methodology.
@@ -146,56 +148,38 @@ AC2 A Site Owner can mark messages as "read" to allow for processing unread mess
 
 
 ## Home Page
-
-
 ![Home Page](static/images/)
+The Home page has a simple clean design with a main banner showing a trail running scene across the wilds of Dartmoor National Park in Devon, UK. 
+The call to action buttons direct the user to the blog and the 'book a holiday' contact form and are then followed by testimonials for the running holidays on offer.
 
+### Features
+I added in a welcome message to the top of the banner which changes greeting based upon the time of day, for example, 'good morning', 'good afternoon' or 'good evening'. This gives the user a more personalised experience whilst using the site.
 
-## Navbar and Navbar links
+A weather report for the Lake District also features at the bottom of the page. The purpose of this is to inform users of the site as to the weather conditions in that area and if it is suitable (and safe) weather for a run.
 
+## Navbar
+The navbar includes links to the Home page, About Page, Register, Log In (or Log Out) and Blog. This simple layout makes the site simple to navigate. On mobile screens this also assists the user to find the correct page quickly under the bar icon.
 
-![NavBar](static/images/png)
+### About and CRUD Functionality
+The About page features information about the site owner who organises the trail running holidays. Below this is the contact form to find out more about booking a holiday. The form asks for the fields: Name, Email and Message. The user then clicks the 'Submit' button and a pop up states 'We have received your booking request! We will respond shortly.' This reassures the site user that the form has been successfully submitted.
+The form also requires that all fields are filled out and requests that the user does so, if the field is left empty. The user also has to provide a valid email address, or the user is asked to 'please provide an '@' in the email address.'
 
+## Register and CRUD Functionality
+The Register page features a sign up form which requests a 'Username', 'email (which is an optional field)' a 'password' and a 'password again' field. I have kept this form simple as it speeds up the sign up process and gets users engaging with the community quickly which should help to keep users on the site for longer. If a user makes an error a message is generated to ask them to for example, to create a username with the rules in place for doing so. Upon registering the user sees a 'Successfully signed in as... (their username)'. The top navigation then switches from "Log In' to 'Log Out'.
+To help the user experience, there is also a link to the 'sign in', if the user already has an account.
 
-## Login Status
+## Login, Log Out and CRUD Functionality
+The login page has two fields, 'username' and 'password' plus a tick box for 'Remember Me'. There is also a link to the register page in case the user does not have an account yet. If a user tries to sign in without a valid username then the user sees a message saying 'The username and/or password you specified are not correct.'
 
+If the user wants to log out, they simply click Logout in the Nav bar. This action then generates a message to the user asking: 'Sign Out. Are you sure you want to sign out?', followed by the 'Sign Out' button. Upon clicking this sign out button the user then sees a message saying: 'You have signed out.'.
 
-![Login Status](static/images/.png)
-
-
-## Create, Read, Update, Delete (CRUD) Functionality
-
-
-![CRUD Example](static/images/png)
-
-
-## Register / Sign In / Sign Out
-
-![SignUp Form](static/images/png)
-
-- See below for Sign In form. 
-
-![SignIn Form](static/images/.png)
-
-- See below for Sign Out screen.
-![SignOut Screen](static/images/.png)
-
-
-## Feedback messages to user upon user actions (i.e deleting a post)
-
-
-![Delete post](static/images/e.png)
-
-![Sign In and reflects username](static/images/.png)
-
-![Post Created](static/images/.png)
-
-![Comment Deleted](static/images/.png)
-
-![Post Deleted](static/images/.png)
-
-![Signed Out](static/images.png)
-
+## Blog and CRUD Functionality
+A signed out user can see all of the blog posts and comments but also sees a message which says: 'Log in to leave a comment'. The user cannot leave a comment until they register or sign in with an existing account.
+A signed in user can see all of the blog posts and comments alongside a box with the title 'Leave a Comment" and a 'bosy' field which must be filled in to allow the user to click the 'Submit' button. If the body field is left blank and the user clicks 'submit' then a message appears asking the user to ' please fill in this field'. 
+The comment option also features the username of the person submitting the comment. 
+After submission, the user sees a message saying 'Comment submitted and awaiting approval'. The user then has the option to press a 'delete' or an 'edit' button and their comment can be seen above this in a faded colour with the additional message 'This comment is awaiting approval'. 
+If the user edits their comment and submits it again, they then receive a notification saying 'Comment Updated!'.
+If the user clicks on 'delete' they see a pop up asking: 'Delete comment? Are you sure you want to delete your comment? This action cannot be undone.' and an option to 'Close' or 'Delete'. If deleted the user sees a message saying : 'Comment deleted!'.
 
 ## Technologies Used
 
@@ -334,11 +318,15 @@ Lighthouse testing was successful for all pages, meeting accessibility requireme
 - My Mentor Spencer
 - Code Institute Walkthrough Projects.
 
-
 # Future features 
-- Adding the option for a social sign in to improve user experience.
-- Add a booking feature to allow users to book holidays.
-- Add a more comprehensive weather outlook for each area.
+- Log In
+Adding the option for a social sign in to improve user experience.
+- Booking Page
+Add a booking feature to allow users to book holidays.
+- Home Page
+Add a more comprehensive weather outlook for each area.
+- Home Page
+Modifying the welcome message to only show on the home page and limiting the message to once per user session.
 
 ### For Developers
 
