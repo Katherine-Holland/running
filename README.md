@@ -13,6 +13,7 @@ Guided Trail Running is a blog for like minded trail runners to come together an
 
 ## Project Goals
 The website is aimed at bringing together trail runners and facilitating community engagement. The aim is to provide an informative experience for trail runners and the option to meet up together via trail running holidays.
+Users can also feel part of the online community in the blog area where they can sign up and read and comment on blog stories. They can also find out more from the site owner about trail running holidays organised by the site owner via an about page and a 'find out more' contact form.
 
 ## User Experience
 I kept the navigation simple and intuitive as this was my first project using Django. I created an easy registration process and kept a welcoming design that feels aligned with the outdoors.
@@ -47,7 +48,9 @@ For this project I followed and Agile methodology. I created a set of issues bas
 - Label the Issue:For Agile, I used labels "To do" "In Progress," and "Done."
 
 ## Create a Kanban Board in GitHub
-I created a project in GitHib called 'Running project user stories' and linked my issues to the board. I also labelled them using MoSCow Prioritization to ensure I worked on the user stories in order of importance. These are the steps I followed to set this up:
+I created a project in GitHib called 'Running project user stories' and linked my issues to the board. See this link to my board: [Kanban Board](https://github.com/users/Katherine-Holland/projects/2)
+
+I also labelled them using MoSCow Prioritization to ensure I worked on the user stories in order of importance. These are the steps I followed to set this up:
 
 - Go to the "Projects" tab of your repository.
 - Click New Project to create a project board.
@@ -60,16 +63,16 @@ Go back to the Issues tab and open an issue you’d like to add to the Kanban bo
 In the right sidebar of the issue, find Projects and select your new Kanban board from the dropdown.
 The issue will now appear in your board’s 'To do' list.
 
-## Step 5: Manage Workflow with Agile Methodology
+## Step 5: Manage Workflow using an Agile Methodology
 
 I prioritised the issues in the To Do list (using MoSCoW prioritization - see below).
-I then moved Issues through the Kanban Board from 'To Do' - 'In Progress' - 'Done' - 'Closed'. I specifically focused on the blog for this task as I was new to this way of working and used the Code Institute Blog walkthrough to assist me in understanding the workflow process.
+I then moved Issues through the Kanban Board from 'To Do' - 'In Progress' - 'Done' - 'Closed'. I specifically focused on the blog as I was new to this way of working and used the Code Institute Blog walkthrough to assist me in understanding the workflow process.
 
 ## MoSCoW Prioritization
 MoSCoW prioritization is a technique used to categorize project requirements into levels of importance. This prioritization helps focus development efforts on what will deliver the most value and keeps the project on track. 
 - I used MoSCoW prioritization to rank how essential each feature would be. See image below for my user stories and how I labelled them. 
 
-![MoSCoW Prioritization](static/images/)
+![MoSCoW Prioritization](/)
 Here are a list of the labels. I used the 'Must-Have' and 'Should-Have' in my project. 
 Must-Have: These are essential features without which the project would be incomplete or fail to meet its core purpose. For my project this included for example, the ability to create and view posts.
 
@@ -81,33 +84,33 @@ Other labels I will use for future projects include:
 ## User Stories
 Here are the User Stories I focused on in order to learn how to work within the Agile methodology.
 
-1. Open a post
+### 1. Open a post
 As a site user I can click on a post so that I can read the full text.
 AC1 When a blog post title is clicked on a detailed view of the post is seen.
 
-2. View Comments 
+### 2. View Comments 
 As a Site User/Admin I can view comments on an individual post so that I can read the conversation.
 AC1 Given one or more user comments the admin can view them.
 AC2 Then a site user can click on the comment thread to read the conversation.
 
-3. Account Registeration
+### 3. Account Registeration
 As a Site User I can register an account so that I can comment on a post.
 AC1 Given an email a user can register an account.
 AC2 Then the user can log in.
 AC3 When the user is logged in they can comment.
 
-4. Comment on a post
+### 4. Comment on a post
 As a Site User I can **leave comments on a post ** so that I can be involved in the conversation.
 AC1 When a user comment is approved.
 AC2 Then a user can reply.
 AC3 Given more than one comment then there is a conversation thread.
 
-5. Modify or Delete Comment on a post
+### 5. Modify or Delete Comment on a post
 As a Site User I can *modify or delete my comment on a post so that I can be involved in the conversation.
 AC1 Given a logged in user, they can modify their comment.
 AC2 Given a logged in user, they can delete their comment.
 
-6. Manage Posts
+### 6. Manage Posts
 As a Site Admin I can create, read, update and delete posts so that I can manage my blog content.
 
 AC1 Given a logged in user, they can create a blog post.
@@ -115,22 +118,22 @@ AC2 Given a logged in user, they can read a blog post.
 AC3 Given a logged in user, they can update a blog post.
 AC4 Given a logged in user, they can delete a blog post.
 
-7. Create Drafts
+### 7. Create Drafts
 As a Site Admin I can create draft posts so that I can finish writing the content later.
 
 AC1 Given a logged in user, they can save a draft blog post.
 AC2 Then they can finish the content at a later time.
 
-8. Approve Comments
+### 8. Approve Comments
 As a Site Admin I can approve or disapprove comments so that I can filter out objectionable comments.
 
 AC1 Given a logged in user, they can approve a comment.
 AC2 Given a logged in user, they can disapprove a comment.
 
-9. View a Paginated list
+### 9. View a Paginated list
 As a User I can view a paginated list of posts so that I can discover the post I want to read easily.
 
-10. Create a Contact Us form
+### 10. Create a Contact Us form
 As a Potential Customer, I can send the site owner a message so that I can find out more about the holidays and potentially book.
 
 AC1 A user can submit a request for more information without logging in.
