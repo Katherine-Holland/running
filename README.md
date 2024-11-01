@@ -17,33 +17,29 @@ If you are working locally, you can clone the repository:
 2. Run the following command to clone the repository:
    ```bash
    git clone https://github.com/Katherine-Holland/running.git
-   
-   and navigate to the directory using this command in the terminal:
-   cd running
-
+3. Navigate to the directory:
+Use this terminal command:
+    cd running
 You can then set up your environment and run the project locally.
-
-
 
 #### Clone the Repository - Alternative Method
 
-Click on the green Code button at the top right of the repository and copy the URL that appears.
-In your terminal, use the following command to clone the repository:
-bash
-Copy code
-git clone https://github.com/Katherine-Holland/running.git
-Replace <URL> with the URL you copied from GitHub, which should look like https://github.com/Katherine-Holland/running.git.
-Navigate to the Project Directory
-After cloning, navigate into the project directory by running:
+1. Click on the green Code button at the top right of the repository and copy the URL that appears.
+    In your terminal, use the following command to clone the repository:
+    ```bash
+    git clone https://github.com/Katherine-Holland/running.git
 
-bash
-Copy code
-cd repository-name
+    Replace <URL> with the URL you copied from GitHub, which should look like https://github.com/Katherine-Holland/running.git.
+    Navigate to the Project Directory.
 
-Install Project Dependencies
+    After cloning, navigate into the project directory by running:
+
+    cd repository-name
+
+2. Install Project Dependencies
 Make sure to install any project dependencies as specified in the repository’s documentation. Often, projects will include a requirements.txt file or package.json for this.
 
-Running the Project
+3. Running the Project
 Follow the instructions in the repository for running the project locally using Django. This project uses: python manage.py runserver.
 
 
