@@ -17,11 +17,12 @@ If you are working locally, you can clone the repository:
 2. Run the following command to clone the repository:
    ```bash
    git clone https://github.com/Katherine-Holland/running.git
-3. Navigate into the cloned directory:
-bash
-Copy code
-cd running
+   and navigate to the directory using this command in the terminal:
+   cd running
+
 You can then set up your environment and run the project locally.
+
+
 
 #### Clone the Repository - Alternative Method
 
