@@ -4,56 +4,18 @@
 
 Take a look at the deployed site here: [Guided Trail Running](https://trailrunning-f565347cbca0.herokuapp.com).
 
-### Getting Started
-
-#### Forking the Repository
-1. Go to the GitHub repository: [Open in GitHub](https://github.com/Katherine-Holland/running).
-2. Click the **Fork** button in the upper right corner of the page to create a copy of the repository under your own GitHub account.
-3. After forking, you can open it in Gitpod using the button above.
-
-#### Cloning the Repository
-If you are working locally, you can clone the repository:
-1. Open your terminal or command prompt.
-2. Run the following command to clone the repository:
-   ```bash
-   git clone https://github.com/Katherine-Holland/running.git
-3. Navigate to the directory:
-Use this terminal command:
-    cd running
-You can then set up your environment and run the project locally.
-
-#### Clone the Repository - Alternative Method
-
-1. Click on the green Code button at the top right of the repository and copy the URL that appears.
-    In your terminal, use the following command to clone the repository:
-    ```bash
-    git clone https://github.com/Katherine-Holland/running.git
-
-    Replace <URL> with the URL you copied from GitHub, which should look like https://github.com/Katherine-Holland/running.git.
-    Navigate to the Project Directory.
-
-    After cloning, navigate into the project directory by running:
-
-    cd repository-name
-
-2. Install Project Dependencies
-Make sure to install any project dependencies as specified in the repository’s documentation. Often, projects will include a requirements.txt file or package.json for this.
-
-3. Running the Project
-Follow the instructions in the repository for running the project locally using Django. This project uses: python manage.py runserver.
-
-
-
 
 # Project Aim
 
 Guided Trail Running is a blog for like minded trail runners to come together and discuss trail running. The blog also acts as a marketing tool to allow the site owner to encourage runners to sign up to their guided running holidays. The site is designed to grow into an informative resource for trail runners.
 
-#Project Aim & UX Goals
+# Project Aim & UX Goals
 
-##Project Goals: The website is aimed at bringing together trail runners and facilitating community engagement. The aim is to provide an informative experience for trail runners and the option to meet up together via trail running holidays.
+## Project Goals
+The website is aimed at bringing together trail runners and facilitating community engagement. The aim is to provide an informative experience for trail runners and the option to meet up together via trail running holidays.
 
-##User Experience: I kept the navigation simple and intuitive as this was my first project using Django. I created an easy registration process and kept a welcoming design that feels aligned with the outdoors.
+## User Experience
+I kept the navigation simple and intuitive as this was my first project using Django. I created an easy registration process and kept a welcoming design that feels aligned with the outdoors.
 
 ## Target Audience
 The target audience are both people new to trail running and those with trail running experience. The audience for trail running holidays is usually mixed, however, more women tend to sign up to holidays and the site reflects this, with images of groups of people and women represented in the images presented.
@@ -62,36 +24,43 @@ The target audience are both people new to trail running and those with trail ru
 I created ERD diagrams and planned the site layout. I used Balsamiq to create wireframes. I then created a Repository in GitHub and set up GitHub Issues and created a Kanban Board following an Agile methodology. The steps are below:
 
 ## Creating a Repo in GitHub
-Step 1: Create a GitHub Repository
+At the start of the project, I created a repository in GitHub. These are the steps I followed:
+
+### Step 1: Create a GitHub Repository
 Go to GitHub and log into your account.
 In the top-right corner, click the + icon, then select New repository.
 Name your repository and add an optional description.
-Choose the repository's visibility: Public or Private.
+Choose the repository's visibility, for this assessed project I chose 'public'.
 Initialize the repository with a README and .gitignore.
-Click Create repository.
-Step 2: Enable Gitpod for the Repository
+Click 'Create repository'.
+### Step 2: Open the IDE.
+I used Gitpod for this project and loaded the project in Gitpod via the link found by clicking the green 'code' button, located at the top right of the repository.
 
 ## Setting up GitHub Issues
-Go to your GitHub repository.
-Click on the Issues tab in the top menu.
-Click New Issue to create an issue.
-Title: Give each issue a clear title, like "User Registration Form".
-Description: Add details about the issue, including the requirements or acceptance criteria, so it’s clear what needs to be done.
-Label the Issue:For Agile, you might use labels like "Backlog," "In Progress," "Review," or "Done."
+For this project I followed and Agile methodology. I created a set of issues based on the blog walkthrough provided by Code Institute as this was my first project working in this manangement style. Below are the steps I took to set up ten issues for the project:
+
+- Go to your GitHub repository.
+- Click on the Issues tab in the top menu.
+- Click New Issue to create an issue.
+- Title: Give each issue a clear title, like "Open a Post".
+- Description: Add details about the issue, including the requirements or acceptance criteria, so it’s clear what needs to be done.
+- Label the Issue:For Agile, I used labels "To do" "In Progress," and "Done."
 
 ## Create a Kanban Board in GitHub
+I created a project in GitHib called 'Running project user stories' and linked my issues to the board. I also labelled them using MoSCow Prioritization to ensure I worked on the user stories in order of importance. These are the steps I followed to set this up:
 
-Go to the "Projects" tab of your repository.
-Click New Project to create a project board.
-Select “Table or Board” view, which will help structure your tasks into columns for better tracking.
-Name Your Board (e.g., "Project Kanban Board") and add an optional description.
+- Go to the "Projects" tab of your repository.
+- Click New Project to create a project board.
+- Select “Table or Board” view, which will help structure your tasks into columns for better tracking. I had 'To do', 'In Progress' and 'Done'.
+- Name Your Board (e.g., "Running project user stories") and add an optional description.
 
-Step 4: Link Issues to the Kanban Board
+## Step 4: Link Issues to the Kanban Board
 
 Go back to the Issues tab and open an issue you’d like to add to the Kanban board.
 In the right sidebar of the issue, find Projects and select your new Kanban board from the dropdown.
-The issue will now appear in your board’s Backlog column (or wherever you choose to place it initially).
-Step 5: Manage Workflow with Agile Methodology
+The issue will now appear in your board’s 'To do' list.
+
+## Step 5: Manage Workflow with Agile Methodology
 
 Prioritize the Backlog: Review and prioritize the issues in the Backlog column based on your project’s needs (use MoSCoW prioritization here if it applies).
 Move Issues Through the Board:
@@ -252,17 +221,13 @@ AC2 A Site Owner can mark messages as "read" to allow for processing unread mess
 
 - Django Aullauth was used for handling the forms and allowing users to register and sign in.
 
+# Website Design
 
 ## Typography
-
-
 
 ## Color Palette
 
 I chose a simple colour scheme of greys and greens to match the feel of the environment found in Trail Running. This simple design also helped the user to navigate easily around the site.
-
-
-
 
 ## Wireframes (include different screen sizes)
 
@@ -363,17 +328,6 @@ Directory	File	Result
 Lighthouse testing was successful for all pages, meeting accessibility requirements.
 ![Lighthouse Test](static/images)
 
-
-# Forking
-
-
-
-
-# Cloning
-
-
-
-
 # Bugs
 1. Using the dev tools I noticed an error for get element by id was null for editing a post. I realised that get attribute was not complete.
 
@@ -386,4 +340,43 @@ Lighthouse testing was successful for all pages, meeting accessibility requireme
 # Future features 
 - Adding the option for a social sign in to improve user experience.
 - Add a booking feature to allow users to book holidays.
-- Add a more comprehensive weather outlook for each area
+- Add a more comprehensive weather outlook for each area.
+
+### For Developers
+
+#### Forking the Repository
+1. Go to the GitHub repository: [Open in GitHub](https://github.com/Katherine-Holland/running).
+2. Click the **Fork** button in the upper right corner of the page to create a copy of the repository under your own GitHub account.
+3. After forking, you can open it in Gitpod using the button above.
+
+#### Cloning the Repository
+If you are working locally, you can clone the repository:
+1. Open your terminal or command prompt.
+2. Run the following command to clone the repository:
+   ```bash
+   git clone https://github.com/Katherine-Holland/running.git
+3. Navigate to the directory:
+Use this terminal command:
+    cd running
+You can then set up your environment and run the project locally.
+
+#### Clone the Repository - Alternative Method
+
+1. Click on the green Code button at the top right of the repository and copy the URL that appears.
+    In your terminal, use the following command to clone the repository:
+    ```bash
+    git clone https://github.com/Katherine-Holland/running.git
+
+    Replace <URL> with the URL you copied from GitHub, 
+    which should look like https://github.com/Katherine-Holland/running.git.
+    Navigate to the Project Directory.
+
+    After cloning, navigate into the project directory by running:
+
+    cd repository-name
+
+2. Install Project Dependencies
+Make sure to install any project dependencies as specified in the repository’s documentation. Often, projects will include a requirements.txt file or package.json for this.
+
+3. Running the Project
+Follow the instructions in the repository for running the project locally using Django. This project uses: python manage.py runserver.
