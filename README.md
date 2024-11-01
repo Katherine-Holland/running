@@ -22,7 +22,7 @@ I kept the navigation simple and intuitive as this was my first project using Dj
 The target audience are both people new to trail running and those with trail running experience. The audience for trail running holidays is usually mixed, however, more women tend to sign up to holidays and the site reflects this, with images of groups of people and women represented in the images presented.
 
 # Planning
-I created ERD diagrams and planned the site layout. I used Balsamiq to create wireframes. I then created a Repository in GitHub and set up GitHub Issues and created a Kanban Board following an Agile methodology. The steps are below:
+I used Balsamiq to create wireframes. I then created a Repository in GitHub and set up GitHub Issues and created a Kanban Board following an Agile methodology. The steps are below:
 
 ## Creating a Repo in GitHub
 At the start of the project, I created a repository in GitHub. These are the steps I followed:
@@ -35,7 +35,7 @@ Choose the repository's visibility, for this assessed project I chose 'public'.
 Initialize the repository with a README and .gitignore.
 Click 'Create repository'.
 
-### Step 2: Open the IDE.
+### Step 2: Open the IDE
 I used Gitpod for this project and loaded the project in Gitpod via the link found by clicking the green 'code' button, located at the top right of the repository.
 
 ## Setting up GitHub Issues
@@ -154,9 +154,9 @@ The Home page has a simple clean design with a main banner showing a trail runni
 The call to action buttons direct the user to the blog and the 'book a holiday' contact form and are then followed by testimonials for the running holidays on offer.
 
 ### Features
-I added in a welcome message to the top of the banner which changes greeting based upon the time of day, for example, 'good morning', 'good afternoon' or 'good evening'. This gives the user a more personalised experience whilst using the site.
+- I added in a welcome message to the top of the banner which changes greeting based upon the time of day, for example, 'good morning', 'good afternoon' or 'good evening'. This gives the user a more personalised experience whilst using the site.
 
-A weather report for the Lake District also features at the bottom of the page. The purpose of this is to inform users of the site as to the weather conditions in that area and if it is suitable (and safe) weather for a run.
+- A weather report for the Lake District also features at the bottom of the page. The purpose of this is to inform users of the site as to the weather conditions in that area and if it is suitable (and safe) weather for a run.
 
 ### Navbar
 The navbar includes links to the Home page, About Page, Register, Log In (or Log Out) and Blog. This simple layout makes the site simple to navigate. On mobile screens this also assists the user to find the correct page quickly under the bar icon.
@@ -226,7 +226,7 @@ If the user clicks on 'delete' they see a pop up asking: 'Delete comment? Are yo
 
 - Django Aullauth was used for handling the forms and allowing users to register and sign in.
 
--[Django Crispy Forms](https://django-crispy-forms.readthedocs.io/en/latest/) 
+- [Django Crispy Forms](https://django-crispy-forms.readthedocs.io/en/latest/) 
 
 - [Whitenoise](https://whitenoise.readthedocs.io/en/latest/index.html) (A pip package that allows you to configure your Django project to serve its own staticfiles so it can deploy anywhere without depending on service providers.)
 
@@ -235,37 +235,37 @@ If the user clicks on 'delete' they see a pop up asking: 'Delete comment? Are yo
 # Website Design
 
 ## Typography
-
+Noto and Sans were used for their simplicity and easy to read style. For the welcome message Courier was chosen to match the informal typewriter effect of the animation.
 
 ## Color Palette
 
 I chose a simple colour scheme of greys and greens to match the feel of the environment found in Trail Running. This simple design also helped the user to navigate easily around the site.
 
-## Wireframes (include different screen sizes)
+## Wireframes
+These were the mock ups I used to build out my site. The site is responsive and as the screen size diminishes, the images disappear and the navbar becomes a small icon with a drop down menu.
+
+## Home Page Wireframe
 
 
 
-## Post Feed Wireframe
+## About Page Wireframe
 
 
-
-## Landing Page Wireframe
-
-
-![Landing Page](static/images.png)
+![L](static/images.png)
 
 
-## Signup Form Wireframe
+## Register Page Wireframe
 
 
 ![Signup Form](static/images/.png)
+
+## Blog Wireframe
 
 
 # Testing
 
 ## User Story Testing
-
-
+All user stories worked as expected with the exception of the 'Edit Comment' function. Please see the 'Bugs' section for further information. All user stories were moved through the Kanban Board and were marked as closed.
 
 ## Browser Compatibility
 
@@ -295,9 +295,9 @@ HTML Validation
 
 Directory	File	Result
 
-|   Directory   	|   File       	|   Result  	|
-|---------------	|--------------	|-----------	|
-|   static/css  	|   style.css  	|      	|
+|   Directory   	|   File       	| Result |
+|---------------	|--------------	|--------|
+|   static/css  	|   style.css  	|      	 |
 
 - Python Validations
 
@@ -345,14 +345,20 @@ Lighthouse testing was successful for all pages, meeting accessibility requireme
 
 # Credits
 
-- My Mentor Spencer
-- Code Institute Walkthrough Projects.
+- My Mentor Spencer.
+- Code Institute support staff.
+- Code Institute P4 walkthrough projects. 
+
+As I worked through the walkthroughs and followed the steps I became more confident. It took a while for the processes and methodology I was working with to 'click' but toward the end of the project, and with the help of staff and my Mentor, the process became more obvious and I now feel I can expand on my user stories and create more complex Django projects moving forward. 
 
 # Future features 
+
 - Log In
 Adding the option for a social sign in to improve user experience.
 - Booking Page
 Add a booking feature to allow users to book holidays.
+- Blog Page
+Add the option of commenting to another comment and notifying the commenter of the response.
 - Home Page
 Add a more comprehensive weather outlook for each area.
 - Home Page
@@ -398,8 +404,14 @@ Make sure to install any project dependencies as specified in the repository’s
 3. Running the Project
 Follow the instructions in the repository for running the project locally using Django. This project uses: python manage.py runserver.
 
-### Deploying the project with Heroku
-Here's how to deploy your Django project from Gitpod to Heroku. You’ll need to have a Heroku account and the Heroku CLI installed in Gitpod. Here are the steps:
+### Set up with Heroku
+1. Create a Heroku account.
+2. Create a new app, give the app a unique name and select your region from the options.
+3. Connect to GitHub (or login if prompted).
+4. Select which branch you want to deploy from.
+
+### Deploy with Heroku
+Here's how to deploy your Django project from Gitpod to Heroku. After setting up a Heroku account, install the Heroku CLI in Gitpod. Here are the steps:
 
 1. Install Gunicorn
    In your Gitpod terminal, install Gunicorn (a WSGI server for serving your app) and Django-Heroku (for configuring Heroku settings automatically):
@@ -475,7 +487,6 @@ I then selected a username and password.
     heroku open
 
 ### Alternative way to deploy using Heroku
-
 1. Commit all changes from Gitpod to Github and sync.
 2. Go to the deployment tab on the Heroku dashboard and click 'Deploy' (I deployed manually).
 3. Once successfully deployed, you will have the option to open the site in a new browser.
