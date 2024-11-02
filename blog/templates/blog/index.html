@@ -5,7 +5,6 @@
 <!-- index.html content starts here -->
 <div class="container-fluid">
     <div class="row">
-
         <!-- Blog Entries Column -->
         <div class="col-12 mt-3 left">
             <div class="row">
@@ -39,7 +38,6 @@
             <div class="row">
                 {% endif %}
                 {% endfor %}
-
             </div>
         </div>
     </div>
@@ -49,7 +47,7 @@
             {% if page_obj.has_previous %}
             <li>
                 <a href="?page={{ page_obj.previous_page_number }}"
-                  class="page-link">&laquo; PREV</a>
+                   class="page-link">&laquo; PREV</a>
             </li>
             {% endif %}
             {% if page_obj.has_next %}
@@ -59,6 +57,5 @@
     </nav>
     {% endif %}
 </div>
-
 <!-- index.html content ends here -->
 {% endblock %}

@@ -232,6 +232,8 @@ If the user clicks on 'delete' they see a pop up asking: 'Delete comment? Are yo
 
 - Bootstrap
 
+- [OpenWeather API](https://home.openweathermap.org/)
+
 # Website Design
 
 ## Typography
@@ -357,7 +359,7 @@ Add a booking feature to allow users to book holidays.
 - Blog Page
 Add the option of commenting to another comment and notifying the commenter of the response.
 - Home Page
-Add a more comprehensive weather outlook for each area.
+Add a more comprehensive weather outlook for each area with weather symbols.
 - Home Page
 Modifying the welcome message to only show on the home page and limiting the message to once per user session.
 
