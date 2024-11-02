@@ -22,7 +22,7 @@ I kept the navigation simple and intuitive as this was my first project using Dj
 The target audience are both people new to trail running and those with trail running experience. The audience for trail running holidays is usually mixed, however, more women tend to sign up to holidays and the site reflects this, with images of groups of people and women represented in the images presented.
 
 # Planning
-I used Balsamiq to create wireframes. I then created a Repository in GitHub and set up GitHub Issues and created a Kanban Board following an Agile methodology. The steps are below:
+I used Lucid to create wireframes. I then created a Repository in GitHub and set up GitHub Issues and created a Kanban Board following an Agile methodology. The steps are below:
 
 ## Creating a Repo in GitHub
 At the start of the project, I created a repository in GitHub. These are the steps I followed:
@@ -39,7 +39,7 @@ Click 'Create repository'.
 I used Gitpod for this project and loaded the project in Gitpod via the link found by clicking the green 'code' button, located at the top right of the repository.
 
 ## Setting up GitHub Issues
-For this project I followed and Agile methodology. I created a set of issues based on the blog walkthrough provided by Code Institute as this was my first project working in this manangement style. Below are the steps I took to set up ten issues for the project:
+For this project I followed an Agile methodology. I created a set of issues based on the blog walkthrough provided by Code Institute as this was my first project working in this manangement style. Below are the steps I took to set up ten issues for the project:
 
 - Go to your GitHub repository.
 - Click on the Issues tab in the top menu.
@@ -151,7 +151,7 @@ AC2 A Site Owner can mark messages as "read" to allow for processing unread mess
 ## Home Page
 ![Home Page](static/images/)
 The Home page has a simple clean design with a main banner showing a trail running scene across the wilds of Dartmoor National Park in Devon, UK. 
-The call to action buttons direct the user to the blog and the 'book a holiday' contact form and are then followed by testimonials for the running holidays on offer.
+The call to action buttons directs the user to the blog and the 'book a holiday' contact form, this is followed by testimonials for the running holidays on offer.
 
 ### Features
 - I added in a welcome message to the top of the banner which changes greeting based upon the time of day, for example, 'good morning', 'good afternoon' or 'good evening'. This gives the user a more personalised experience whilst using the site.
@@ -159,7 +159,7 @@ The call to action buttons direct the user to the blog and the 'book a holiday' 
 - A weather report for the Lake District also features at the bottom of the page. The purpose of this is to inform users of the site as to the weather conditions in that area and if it is suitable (and safe) weather for a run.
 
 ### Navbar
-The navbar includes links to the Home page, About Page, Register, Log In (or Log Out) and Blog. This simple layout makes the site simple to navigate. On mobile screens this also assists the user to find the correct page quickly under the bar icon.
+The navbar includes links to the Home page, About Page, Register, Log In (or Log Out) and Blog. This simple layout makes the site simple to navigate. On mobile screens this also assists the user to find the correct page quickly under the menu bar icon.
 
 ### About and CRUD Functionality
 The About page features information about the site owner who organises the trail running holidays. 
@@ -196,7 +196,7 @@ The user cannot leave a comment until they register or sign in with an existing 
 A signed in user can see all of the blog posts and comments alongside a box with the title 'Leave a Comment" and a 'bosy' field which must be filled in to allow the user to click the 'Submit' button. 
 If the body field is left blank and the user clicks 'submit' then a message appears asking the user to ' please fill in this field'. 
 The comment option also features the username of the person submitting the comment.
-Users can also like or unlike comments and the number of likes is displayed using a heart emoji to show other users any popular remarks.
+Users can also like or unlike comments and the number of likes is displayed using a heart emoji to show other users any popular remarks. This was implemtented toward the end of the project as I became more confident with Django. In future, I would have added this as a User Story and run it through the Kanban Board.
 
 After submission, the user sees a message saying 'Comment submitted and awaiting approval'. 
 The user then has the option to press a 'delete' or an 'edit' button and their comment can be seen above this in a faded colour with the additional message 'This comment is awaiting approval'. 
@@ -306,21 +306,21 @@ I used the ![Code Institute PEP8 Linter](https://pep8ci.herokuapp.com/) to valid
 
 | App    	| File    	    | Result|
 |----------	|-------------	|-------|
-| blog     	| admin.py    	|   	|
-| blog     	| apps.py   	|   	|
-| blog     	| forms.py     	|   	|
-| blog     	| models.py     |
-| blog     	| test_forms.py |       |
-| blog      | test_views.py |       |
+| blog     	| admin.py    	| PASS  |
+| blog     	| apps.py   	| PASS  |
+| blog     	| forms.py     	| PASS  |
+| blog     	| models.py     | PASS  |
+| blog     	| test_forms.py | PASS  |
+| blog      | test_views.py | PASS  |
 | blog      | urls.py.      | PASS  |
 | blog      | views.py      | PASS  |
 | about     | admin.py      | PASS  |
 | about     | apps.py       | PASS  |
 | about     | forms.py      | PASS  |
-| about     | models.py     | PASS. |
+| about     | models.py     | PASS  |
 | about     | test_forms.py | PASS  |
-| about     | urls.py       | PASS. |
-| about     | views.py      | PASS. |
+| about     | urls.py       | PASS  |
+| about     | views.py      | PASS  |
 | home     	| apps.py     	| PASS	|
 | home     	| settings.py   | PASS 	|
 | home     	| urls.py       | PASS  |
@@ -339,6 +339,7 @@ Lighthouse testing was successful for all pages, meeting accessibility requireme
 - My Mentor Spencer.
 - Code Institute support staff.
 - Code Institute P4 walkthrough projects. 
+- Literature: Django by Example by Antonio Mele.
 
 As I worked through the walkthroughs and followed the steps I became more confident. It took a while for the processes and methodology I was working with to 'click' but toward the end of the project, and with the help of staff and my Mentor, the process became more obvious and I now feel I can expand on my user stories and create more complex Django projects moving forward. 
 
@@ -390,7 +391,7 @@ If you are working locally, you can clone the repository:
     cd repository-name
 
 2. Install Project Dependencies
-Make sure to install any project dependencies as specified in the repository’s documentation. Often, projects will include a requirements.txt file or package.json for this.
+Install project dependencies by checking the requirements.txt file.
 
 3. Running the Project
 Follow the instructions in the repository for running the project locally using Django. This project uses: python manage.py runserver.
@@ -478,6 +479,6 @@ I then selected a username and password.
     heroku open
 
 ### Alternative way to deploy using Heroku
-1. Commit all changes from Gitpod to Github and sync.
+1. Commit all changes with a Commit Message from Gitpod to Github and sync.
 2. Go to the deployment tab on the Heroku dashboard and click 'Deploy' (I deployed manually).
 3. Once successfully deployed, you will have the option to open the site in a new browser.
