@@ -195,7 +195,8 @@ The user cannot leave a comment until they register or sign in with an existing 
 
 A signed in user can see all of the blog posts and comments alongside a box with the title 'Leave a Comment" and a 'bosy' field which must be filled in to allow the user to click the 'Submit' button. 
 If the body field is left blank and the user clicks 'submit' then a message appears asking the user to ' please fill in this field'. 
-The comment option also features the username of the person submitting the comment. 
+The comment option also features the username of the person submitting the comment.
+Users can also like or unlike comments and the number of likes is displayed using a heart emoji to show other users any popular remarks.
 
 After submission, the user sees a message saying 'Comment submitted and awaiting approval'. 
 The user then has the option to press a 'delete' or an 'edit' button and their comment can be seen above this in a faded colour with the additional message 'This comment is awaiting approval'. 

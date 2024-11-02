@@ -4,6 +4,7 @@ from django.test import TestCase
 from .forms import CommentForm
 from .models import Post
 
+
 class TestBlogViews(TestCase):
 
     def setUp(self):
@@ -25,7 +26,7 @@ class TestBlogViews(TestCase):
         self.assertIn(b"Blog content", response.content)
         self.assertIsInstance(
             response.context['comment_form'], CommentForm)
-    
+
     def test_successful_collaboration_request_submission(self):
         """Test for a user requesting a collaboration"""
         post_data = {

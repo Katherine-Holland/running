@@ -1,9 +1,10 @@
 from django import forms
 from .models import Comment
 
+
 class CommentForm(forms.ModelForm):
     """
-    Form class for users to comment on a post 
+    Form class for users to comment on a post
     """
     class Meta:
         """
@@ -11,4 +12,3 @@ class CommentForm(forms.ModelForm):
         """
         model = Comment
         fields = ('body',)
-
