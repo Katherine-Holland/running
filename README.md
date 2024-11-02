@@ -27,7 +27,7 @@ I used Lucid to create wireframes. I then created a Repository in GitHub and set
 ## Creating a Repo in GitHub
 At the start of the project, I created a repository in GitHub. These are the steps I followed:
 
-### Step 1: Create a GitHub Repository
+### Create a GitHub Repository
 Go to GitHub and log into your account.
 In the top-right corner, click the + icon, then select New repository.
 Name your repository and add an optional description.
@@ -35,7 +35,7 @@ Choose the repository's visibility, for this assessed project I chose 'public'.
 Initialize the repository with a README and .gitignore.
 Click 'Create repository'.
 
-### Step 2: Open the IDE
+### Open the IDE
 I used Gitpod for this project and loaded the project in Gitpod via the link found by clicking the green 'code' button, located at the top right of the repository.
 
 ## Setting up GitHub Issues
@@ -58,13 +58,13 @@ I also labelled them using MoSCow Prioritization to ensure I worked on the user 
 - Select “Table or Board” view, which will help structure your tasks into columns for better tracking. I had 'To do', 'In Progress' and 'Done'.
 - Name Your Board (e.g., "Running project user stories") and add an optional description.
 
-## Step 4: Link Issues to the Kanban Board
+## Link Issues to the Kanban Board
 
 Go back to the Issues tab and open an issue you’d like to add to the Kanban board.
 In the right sidebar of the issue, find Projects and select your new Kanban board from the dropdown.
 The issue will now appear in your board’s 'To do' list.
 
-## Step 5: Manage Workflow using an Agile Methodology
+## Manage Workflow using an Agile Methodology
 
 I prioritised the issues in the To Do list (using MoSCoW prioritization - see below).
 I then moved Issues through the Kanban Board from 'To Do' - 'In Progress' - 'Done' - 'Closed'. I specifically focused on the blog as I was new to this way of working and used the Code Institute Blog walkthrough to assist me in understanding the workflow process.
