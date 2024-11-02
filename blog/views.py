@@ -133,3 +133,11 @@ def comment_delete(request, slug, comment_id):
                              'You can only delete your own comments!')
 
     return HttpResponseRedirect(reverse('post_detail', args=[slug]))
+
+def toggle_comment_like(request, comment_id):
+    comment = get_object_or_404(Comment, id=comment_id)
+    if request.user in comment.likes.all():
+        comment.likes.remove(request.user)  # Unlike if already liked
+    else:
+        comment.likes.add(request.user)  # Like if not yet liked
+    return HttpResponseRedirect(request.META.get('HTTP_REFERER'))

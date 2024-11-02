@@ -71,6 +71,14 @@
           <button class="btn btn-delete" data-comment_id="{{ comment.id }}">Delete</button>
           <button class="btn btn-edit" data-comment_id="{{ comment.id }}">Edit</button>
           {% endif %}
+
+          <!-- Like button for the comment -->
+          <form method="POST" action="{% url 'toggle_comment_like' comment.id %}" style="display:inline;">
+            {% csrf_token %}
+            <button type="submit" class="btn btn-like">
+                ❤️ {{ comment.likes.count }}
+            </button>
+        </form>
         </div>
         <!-- Our for loop ends here -->
         {% endfor %}
