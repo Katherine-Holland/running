@@ -209,7 +209,7 @@ If the user clicks on 'delete' they see a pop up asking: 'Delete comment? Are yo
 
 - HMTL, CSS, JavaScript, Python and Django.
 
-- [Balsamiq Wireframes.](https://balsamiq.com/) 
+- [Lucid Wireframes](https://lucid.app/documents/#/home?folder_id=recent) 
 
 - Heroku was used for deployment.
 
