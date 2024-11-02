@@ -244,16 +244,20 @@ I chose a simple colour scheme of greys and greens to match the feel of the envi
 ## Wireframes
 These were the mock ups I used to build out my site. The site is responsive and as the screen size diminishes, the images disappear and the navbar becomes a small icon with a drop down menu.
 
-## `#06402B`Home Page Wireframe
+## Home Page Wireframe
+
 ![Wireframe](static/images/homepage.png)
 
 
 ## About Page Wireframe
+
 ![Wireframe](static/images/aboutpage.png)
 
 
 ## Blog Wireframe
+
 ![Wireframe](static/images/blogpage.png)
+
 
 # Testing
 
