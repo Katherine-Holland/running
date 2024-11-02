@@ -274,7 +274,8 @@ The site works as intended on Google Chrome and Safari.
 
 ## Validations
 
-HTML Validation
+- HTML Validation
+I used ![W3 html validator](https://validator.w3.org/nu/#textarea) to check my html files.
 
 | Directory  | File                    | Result |
 |------------|-------------------------|--------|
@@ -287,61 +288,51 @@ HTML Validation
 | signup     | logout.html             | PASS   |
 | signup     | signup.html             | PASS   |
 
-- JavaScript validation
 
-![JavaScript Validation](static/images/j.png)
+- JavaScript validation
+I used ![JSHint](https://jshint.com/) to validate my js files.
+
 
 - CSS Validation
-
-Directory	File	Result
+I used ![W3 CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) to validate my CSS style sheet.
 
 |   Directory   	|   File       	| Result |
 |---------------	|--------------	|--------|
-|   static/css  	|   style.css  	|      	 |
+|   static/css  	|   style.css  	|  PASS  |
+
 
 - Python Validations
+I used the ![Code Institute PEP8 Linter](https://pep8ci.herokuapp.com/) to validate my Python files.
 
-| blog     	| apps.py     	| PASS  	|
-|----------	|-------------	|-------	|
-| blog     	| forms.py    	|   	|
-| blog     	| models.py   	|   	|
-| blog     	| urls.py     	|   	|
-| blog     	| views.py    	|   	|
-|          	|             	|       |
-| running   | settings.py   | PASS |
-| running   | urls.py.      | PASS                |
-
-| home     	| __init__.py 	| 
-| home     	| admin.py    	|   	|
-| home     	| apps.py     	| 	|
-| home     	| forms.py    	|   	|
-| home     	| models.py   	|  	|
-| home     	| urls.py     	|   	|
-| home     	| views.py    	|   	|
-|          	|             	|       	|
-|          	|             	|       	|
-| signup   	| __init__.py 	|   	|
-| signup   	| admin.py    	|   	|
-| signup   	| apps.py     	|   	|
-| signup   	| forms.py    	|   	|
-| signup   	| models.py   	|   	|
-| signup   	| urls.py     	| 	|
-| signup   	| views.py    	|   	|
-|          	|             	|       	|
-|          	|             	|       	|
-| 	| __init__.py 	|  	|
-|  	| asgi.py     	|  	|
-|  	| settings.py 	|   	|
-|  	| urls.py     	|  	|
-| 	| wsgi.py     	|  	|
-
+| App    	| File    	    | Result|
+|----------	|-------------	|-------|
+| blog     	| admin.py    	|   	|
+| blog     	| apps.py   	|   	|
+| blog     	| forms.py     	|   	|
+| blog     	| models.py     |
+| blog     	| test_forms.py |       |
+| blog      | test_views.py |       |
+| blog      | urls.py.      | PASS  |
+| blog      | views.py      | PASS  |
+| about     | admin.py      | PASS  |
+| about     | apps.py       | PASS  |
+| about     | forms.py      | PASS  |
+| about     | models.py     | PASS. |
+| about     | test_forms.py | PASS  |
+| about     | urls.py       | PASS. |
+| about     | views.py      | PASS. |
+| home     	| apps.py     	| PASS	|
+| home     	| settings.py   | PASS 	|
+| home     	| urls.py       | PASS  |
+| home     	| utils.py     	| PASS	|
+| home     	| views.py    	| PASS  |
 
 ## Lighthouse Testing (Desktop and Mobile)
 Lighthouse testing was successful for all pages, meeting accessibility requirements.
 ![Lighthouse Test](static/images)
 
 ## Bugs
-1. Using the dev tools I noticed an error for get element by id was null for editing a post. I realised that get attribute was not complete.
+1. Using the Google Dev Tools I picked up a 'null' error for GetElementbyId when the user was editing a post. I realised that get GetAttribute was not complete, after amending the code, the Developer Tools picked up no further errors.
 
 # Credits
 
