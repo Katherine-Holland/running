@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
+
 body {
     background-color: #F9FAFC;
 }
@@ -182,7 +184,6 @@ body {
     color: #188181;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
 
 .typewriter {
     font-family: 'Courier Prime', monospace;
