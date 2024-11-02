@@ -136,7 +136,7 @@ AC2 Given a logged in user, they can disapprove a comment.
 ### 9. View a Paginated list
 As a User I can view a paginated list of posts so that I can discover the post I want to read easily.
 
-### 10. Create a Contact Us form
+### 10. Create a Contact Us Form
 As a Potential Customer, I can send the site owner a message so that I can find out more about the holidays and potentially book.
 
 AC1 A user can submit a request for more information without logging in.
@@ -148,15 +148,22 @@ AC1 A Site Owner can see the booking messages in the admin area.
 AC2 A Site Owner can mark messages as "read" to allow for processing unread messages and avoiding missing requests.
 
 
+# Site Design
+
 ## Home Page
-![Home Page](static/images/)
 The Home page has a simple clean design with a main banner showing a trail running scene across the wilds of Dartmoor National Park in Devon, UK. 
 The call to action buttons directs the user to the blog and the 'book a holiday' contact form, this is followed by testimonials for the running holidays on offer.
+
+## Typography
+Noto and Sans were used for their simplicity and easy to read style. For the welcome message Courier was chosen to match the informal typewriter effect of the animation.
+
+## Color Palette
+I chose a simple colour scheme of greys and greens to match the feel of the environment found in Trail Running. This simple design also helped the user to navigate easily around the site.
 
 ### Features
 - I added in a welcome message to the top of the banner which changes greeting based upon the time of day, for example, 'good morning', 'good afternoon' or 'good evening'. This gives the user a more personalised experience whilst using the site.
 
-- A weather report for the Lake District also features at the bottom of the page. The purpose of this is to inform users of the site as to the weather conditions in that area and if it is suitable (and safe) weather for a run.
+- A weather report for the Lake District also features at the bottom of the page. The purpose of this is to inform users of the site as to the weather conditions in that area and if it is suitable (and safe) weather for a run. This was added near to the end of he project as I had time to take a look at API calls with Django. In future, I would have added this as a User Story.
 
 ### Navbar
 The navbar includes links to the Home page, About Page, Register, Log In (or Log Out) and Blog. This simple layout makes the site simple to navigate. On mobile screens this also assists the user to find the correct page quickly under the menu bar icon.
@@ -235,21 +242,15 @@ If the user clicks on 'delete' they see a pop up asking: 'Delete comment? Are yo
 
 - [OpenWeather API](https://home.openweathermap.org/)
 
-# Website Design
-
-## Typography
-Noto and Sans were used for their simplicity and easy to read style. For the welcome message Courier was chosen to match the informal typewriter effect of the animation.
-
-## Color Palette
-
-I chose a simple colour scheme of greys and greens to match the feel of the environment found in Trail Running. This simple design also helped the user to navigate easily around the site.
+# Website Planning
 
 ## Wireframes
 These were the mock ups I used to build out my site. The site is responsive and as the screen size diminishes, the images disappear and the navbar becomes a small icon with a drop down menu.
 
 ## Home Page Wireframe
 
-![Wireframe](static/images/homepage.png)
+![Wireframe](static/images/homepage.png) 
+
 
 
 ## About Page Wireframe
@@ -257,9 +258,11 @@ These were the mock ups I used to build out my site. The site is responsive and 
 ![Wireframe](static/images/aboutpage.png)
 
 
+
 ## Blog Wireframe
 
 ![Wireframe](static/images/blogpage.png)
+
 
 
 # Testing
@@ -269,13 +272,13 @@ All user stories worked as expected with the exception of the 'Edit Comment' fun
 
 ## Browser Compatibility
 
-The site works as intended on Google Chrome and Safari.
+The site works as intended on Google Chrome and Safari and across mobile devices. This was tested with the Google Developer Tools.
 
 
 ## Validations
 
 - HTML Validation
-I used ![W3 html validator](https://validator.w3.org/nu/#textarea) to check my html files.
+I used [W3 html validator](https://validator.w3.org/nu/#textarea) to check my html files.
 
 | Directory  | File                    | Result |
 |------------|-------------------------|--------|
@@ -290,11 +293,11 @@ I used ![W3 html validator](https://validator.w3.org/nu/#textarea) to check my h
 
 
 - JavaScript validation
-I used ![JSHint](https://jshint.com/) to validate my js files.
+I used [JSHint](https://jshint.com/) to validate my js files.
 
 
 - CSS Validation
-I used ![W3 CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) to validate my CSS style sheet.
+I used [W3 CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) to validate my CSS style sheet.
 
 |   Directory   	|   File       	| Result |
 |---------------	|--------------	|--------|
@@ -302,7 +305,7 @@ I used ![W3 CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_inpu
 
 
 - Python Validations
-I used the ![Code Institute PEP8 Linter](https://pep8ci.herokuapp.com/) to validate my Python files.
+I used the [Code Institute PEP8 Linter](https://pep8ci.herokuapp.com/) to validate my Python files.
 
 | App    	| File    	    | Result|
 |----------	|-------------	|-------|
@@ -329,7 +332,6 @@ I used the ![Code Institute PEP8 Linter](https://pep8ci.herokuapp.com/) to valid
 
 ## Lighthouse Testing (Desktop and Mobile)
 Lighthouse testing was successful for all pages, meeting accessibility requirements.
-![Lighthouse Test](static/images)
 
 ## Bugs
 1. Using the Google Dev Tools I picked up a 'null' error for GetElementbyId when the user was editing a post. I realised that get GetAttribute was not complete, after amending the code, the Developer Tools picked up no further errors.
