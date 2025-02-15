@@ -252,17 +252,14 @@ These were the mock ups I used to build out my site. The site is responsive and 
 ![Wireframe](static/images/homepage.png) 
 
 
-
 ## About Page Wireframe
 
 ![Wireframe](static/images/aboutpage.png)
 
 
-
 ## Blog Wireframe
 
 ![Wireframe](static/images/blogpage.png)
-
 
 
 # Testing
@@ -332,6 +329,121 @@ I used the [Code Institute PEP8 Linter](https://pep8ci.herokuapp.com/) to valida
 
 ## Lighthouse Testing (Desktop and Mobile)
 Lighthouse testing was successful for all pages, meeting accessibility requirements.
+
+## Manual Testing
+
+### Navigation Link Testing
+
+| Directory  | File                                                             | Steps                                    | Result |
+|------------|------------------------------------------------------------------|------------------------------------------|--------|
+| home       | https://trailrunning-f565347cbca0.herokuapp.com                  |Click on the Home Link in the Nav bar     | PASS   |
+| about      | https://trailrunning-f565347cbca0.herokuapp.com/about            |Click on the About Link in the Nav bar    | PASS   |
+| register   | https://trailrunning-f565347cbca0.herokuapp.com/accounts/signup  |Click on the Register Link in the Nav bar | PASS   |
+| login      | https://trailrunning-f565347cbca0.herokuapp.com/accounts/login   |Click on the Login Link in the Nav bar    | PASS   |
+| blog       | https://trailrunning-f565347cbca0.herokuapp.com/blog             |Click on the Blog Link in the Nav bar     | PASS   |
+| Footer     | https://www.facebook.com/YourPageName                            |Click on the Facebook Link in the Footer  | PASS   |            
+
+### Testing the user flow
+
+Home Page:
+
+| Test Name      | Steps                                | Expected Result                               | Actual Result     | Pass/Fail |
+|----------------|-------------------------------------|------------------------------------------------|-------------------|-----------|
+| Book a Holiday | Click on the 'Book a Holiday" button | User is redirected to the about page.         | Same as expected  | PASS      |
+| Read the Blog  | Click on the 'Read the Blog" button  | User is redirected to the blog page.          | Same as expected  | PASS      |
+| Find Out More  | Click on the 'Find Out More" button  | User is redirected to the about page.         | Same as expected  | PASS      |
+
+About Page:
+
+| Test Name      | Steps                                | Expected Result                               | Actual Result     | Pass/Fail |
+|----------------|--------------------------------------|-----------------------------------------------|-------------------|-----------|
+| Book a Holiday | Click on the 'Book a Holiday" button | User is redirected to the about page.         | Same as expected  | PASS      |
+| Read the Blog  | Click on the 'Read the Blog" button  | User is redirected to the blog page.          | Same as expected  | PASS      |
+| Submit         | Click on the 'Submit" button         | User successfully submits an enquiry.         | Same as expected  | PASS      |
+
+Register Page:
+
+| Test Name      | Steps                                | Expected Result                               | Actual Result     | Pass/Fail |
+|----------------|--------------------------------------|-----------------------------------------------|-------------------|-----------|
+| Book a Holiday | Click on the 'Book a Holiday" button | User is redirected to the about page.         | Same as expected  | PASS      |
+| Read the Blog  | Click on the 'Read the Blog" button  | User is redirected to the blog page.          | Same as expected  | PASS      |
+| Sign Up        | Click on the 'Sign Up" button        | User successfully registers with the site     | Same as expected  | PASS      |
+| Sign In        | Click to be redirected to 'Sign In'  | User is redirected to the Login page.         | Same as expected  | PASS      |
+
+Login Page:
+
+| Test Name      | Steps                                | Expected Result                               | Actual Result     | Pass/Fail |
+|----------------|--------------------------------------|-----------------------------------------------|-------------------|-----------|
+| Book a Holiday | Click on the 'Book a Holiday" button | User is redirected to the about page.         | Same as expected  | PASS      |
+| Read the Blog  | Click on the 'Read the Blog" button  | User is redirected to the blog page.          | Same as expected  | PASS      |
+| Sign In        | Click on the 'Sign In" button        | User successfully signs into the site         | Same as expected  | PASS      |
+|                |                                      | and sees the Log Out tab in the nav bar.      |                   |           |
+
+Blog Page:
+
+| Test Name      | Steps                                | Expected Result                               | Actual Result     | Pass/Fail |
+|----------------|--------------------------------------|-----------------------------------------------|-------------------|-----------|
+| Book a Holiday | Click on the 'Book a Holiday" button | User is redirected to the about page.         | Same as expected  | PASS      |
+| Read the Blog  | Click on the 'Read the Blog" button  | User is redirected to the blog page.          | Same as expected  | PASS      |
+| Read a Blog    | Click on a blog post                 | User successfully opens a selected blog post  | Same as expected  | PASS      |
+
+Logout Page:
+
+| Test Name       | Steps                                | Expected Result                               | Actual Result     | Pass/Fail |
+|-----------------|--------------------------------------|-----------------------------------------------|-------------------|-----------|
+| Book a Holiday  | Click on the 'Book a Holiday" button | User is redirected to the about page.         | Same as expected  | PASS      |
+| Read the Blog   | Click on the 'Read the Blog" button  | User is redirected to the blog page.          | Same as expected  | PASS      |
+| Sign Out Button | Click on the 'Sign Out' button       | User is redirected to the home page and sees  | Same as expected  | PASS      |
+|                 |                                      | a pop up 'You have signed out'. The nav bar   |                   |           |
+|                 |                                      | then shows the Log In tab.                    |                   |           |                                                       
+
+### Testing the CRUD and fields
+
+About Page:
+
+| Test Name      | Steps                                | Expected Result                                              | Actual Result     | Pass/Fail |
+|----------------|--------------------------------------|--------------------------------------------------------------|-------------------|-----------|
+| Find out More  | Fill out the 'name' field            | User adds name to field. If missing the user sees a warning  |                   |           |
+|                |                                      | 'Please fill in this field'                                  | Same as expected  | PASS      |
+| Find Out More  | Fill out the 'email' field           | User adds email to field. If missing the user sees a warning |                   |           |
+|                |                                      | 'Please include an @ in the email address'                   | Same as expected  | PASS      |
+| Find Out More  | Fill out the 'message' field         | User adds name to field. If missing the user sees a warning  |                   |           |
+|                |                                      | 'Please fill in this field'                                  |                   | PASS      |
+| Submit Button  | Click the 'Submit' button            | User sees a pop up: 'We have received your booking request!  |                   |           |
+|                |                                      | We will respond shortly.'                                    |                   |           |
+
+
+Register Page:
+
+| Test Name      | Steps                                | Expected Result                                                          | Actual Result     | Pass/Fail |
+|----------------|--------------------------------------|--------------------------------------------------------------------------|-------------------|-----------|
+| Username       | Fill out the 'username' field        | User adds name to field. If missing the user sees a warning              |                   |           |
+|                |                                      | 'Please fill in this field'                                              | Same as expected  | PASS      |
+| Email          | Fill out the 'email' field           | User adds email to field. If missing the user sees a warning             |                   |           |
+|                |                                      | 'Please include an @ in the email address'                               | Same as expected  | PASS      |
+| Password       | Fill out the 'password' field        | User adds name to field. If missing the user sees a warning              |                   |           |
+|                |                                      | 'Please fill in this field'                                              | Same as expected  | PASS      |
+|                |                                      | If a user adds an email already in use an error is displayed:            |                   |           |
+|                |                                      | 'A user is already registered with this email address.'                  | Same as expected  | PASS      |
+| Password again | Confirm 'password' in field          | User repeats password. If there is something incorrect the user          |                   |           |
+|                |                                      | sees a generated warning:                                                |                   |           |
+|                |                                      | If the username matches the password:                                    |                   |           |
+|                |                                      | - Your password can’t be too similar to your other personal information. | Same as expected  | PASS      |
+|                |                                      | If the password is shorter than 8 characters:                            |                   |           |
+|                |                                      | - Your password must contain at least 8 characters.                      | Same as expected  | PASS      |
+|                |                                      | If the password is too common:                                           |                   |           |
+|                |                                      | - Your password can’t be a commonly used password.                       | Same as expected  | PASS      |
+|                |                                      | If the password is only numeric:                                         |                   |           |
+|                |                                      | - Your password can’t be entirely numeric.                               | Same as expected  | PASS      |
+|                |                                      | If the password 'again' field doesn't match the password chosen:         |                   |           |
+|                |                                      | - You must type the same password each time.                             | Same as expected  | PASS      |
+| Sign Up        | User clicks "Sign Up' button         | User sees pop up 'Successfully signed in as 'username'' and Log out is   |                   |           |
+|                |                                      | now visible as replacement of Log In on the navigaton bar.               | Same as expected  | PASS      |
+
+
+Log In Page:
+
+
 
 ## Bugs
 1. Using the Google Dev Tools I picked up a 'null' error for GetElementbyId when the user was editing a post. I realised that get GetAttribute was not complete, after amending the code, the Developer Tools picked up no further errors.
