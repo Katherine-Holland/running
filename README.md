@@ -485,12 +485,12 @@ Blog Page:
 |                |                                       | the like is removed.                                                     | Same as expected  | PASS      |
 | Create post    |                                       |                                                                          |                   |           |
 | and management | Site Admin can create, read, update & | Admin can create a post by clicking 'Add post", read current posts, edit |                   |           |
-|                | and delete posts under Blog - Posts   | posts by clicking on the post link, save post by clicking 'save' and     |                   |           |
-|                |                                       | delete post by clicking 'delete'.                                        | Same as expected  | PASS      |
+|                | and delete posts under Blog - Posts   |posts by clicking on the post link, save post by clicking 'save' and      |                   |           |
+|                |                                       |delete post by clicking 'delete'.                                         | Same as expected  | PASS      |
 | Draft Post     | Site Admin can draft a post after     |                                                                          |                   |           |           
 |                | clicking 'Add Post' then 'Save &      |Post saves and is accessible for further editing.                         |                   |           |
 |                | continue editing'                     |                                                                          | Same as expected  | PASS      |           | Admin Comments | Under comments Admin can approve or   | Comment is approved and saved to show on website or is not approved and  |                   |           |
-|                | disapprove via checkbox tick.         |  remains hidden.                                                         | Same as expected  | PASS      |     
+|                | disapprove via checkbox tick.         | remains hidden.                                                          | Same as expected  | PASS      |     
 
 ## Bugs
 1. Using the Google Dev Tools I picked up a 'null' error for GetElementbyId when the user was editing a post. I realised that get GetAttribute was not complete, after amending the code, the Developer Tools picked up no further errors.
