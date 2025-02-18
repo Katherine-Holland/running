@@ -292,9 +292,9 @@ I used [W3 html validator](https://validator.w3.org/nu/#textarea) to check my ht
 - JavaScript validation
 I used [JSHint](https://jshint.com/) to validate my js files.
 
-|   Directory   	|   File       	| Result |
-|---------------	|--------------	|--------|
-|     	|    	|  PASS  |
+|   File       	| Result |
+|-----------------|--------|
+| comments.js     |  PASS  |
 
 
 - CSS Validation
@@ -333,6 +333,16 @@ I used the [Code Institute PEP8 Linter](https://pep8ci.herokuapp.com/) to valida
 
 ## Lighthouse Testing (Desktop and Mobile)
 Lighthouse testing was successful for all pages, meeting accessibility requirements.
+
+| Page    |  Accessibility | Best Practices | SEO |
+|---------|----------------|----------------|-----|
+| Home    | 95%            |  96%           | 91% |
+| About   | 95%            |  96%           | 91% |
+| Log Out | 92%            |  96%           | 91% |
+| Log In  | 93%            |  96%           | 91% |
+| Blog    | 95%            |  96%           | 91% |
+| Post    | 93%            |  96%           | 91% |
+| Register| 94%            |  96%           | 91% |
 
 ## Manual Testing
 
@@ -466,7 +476,7 @@ Blog Page:
 |                |                                       | your comment? This action cannot be undone.' User clicks close or delete.| Same as expected  | PASS      |
 |                |                                       | If user confirms delete they see 'Comment deleted!'                      | Same as expected  | PASS      |
 |                |                                       | If user clicks close, the message stays as awaiting approval.            | Same as expected  | PASS      |
-| Like a post    | User can click on hte heart emoji     | If the user clicks the heart emoji it shows as liked. If clicked again   |                   |           |
+| Like a post    | User can click on the heart emoji     | If the user clicks the heart emoji it shows as liked. If clicked again   |                   |           |
 |                |                                       | the like is removed.                                                     | Same as expected  | PASS      |
 
 
