@@ -493,7 +493,13 @@ Blog Page:
 |                | disapprove via checkbox tick.         | remains hidden.                                                          | Same as expected  | PASS      |     
 
 ## Bugs
-1. Using the Google Dev Tools I picked up a 'null' error for GetElementbyId when the user was editing a post. I realised that get GetAttribute was not complete, after amending the code, the Developer Tools picked up no further errors.
+
+1. Using the Google Dev Tools I picked up a 'null' error for 'GetElementbyId' when the user was editing a comment. I realised that get GetAttribute was not complete, after amending the code, the Developer Tools picked up no further errors:
+   
+| Test Name      | Steps                                 | Expected Result              | Actual Result                    | Fixed     |
+|----------------|---------------------------------------|------------------------------|----------------------------------|-----------|
+| Edit comment   | User clicks on 'edit' comment button  | User sees 'Comment Updated'  |'Null' Error for 'GetElementbyId' | FIXED     |
+
 
 # Credits
 
