@@ -292,6 +292,10 @@ I used [W3 html validator](https://validator.w3.org/nu/#textarea) to check my ht
 - JavaScript validation
 I used [JSHint](https://jshint.com/) to validate my js files.
 
+|   Directory   	|   File       	| Result |
+|---------------	|--------------	|--------|
+|     	|    	|  PASS  |
+
 
 - CSS Validation
 I used [W3 CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) to validate my CSS style sheet.
@@ -305,10 +309,10 @@ I used [W3 CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input
 I used the [Code Institute PEP8 Linter](https://pep8ci.herokuapp.com/) to validate my Python files.
 
 | App    	| File    	    | Result|
-|----------	|-------------	|-------|
-| blog     	| admin.py    	| PASS  |
-| blog     	| apps.py   	| PASS  |
-| blog     	| forms.py     	| PASS  |
+|----------	|---------------|-------|
+| blog     	| admin.py    	 | PASS  |
+| blog     	| apps.py   	 | PASS  |
+| blog     	| forms.py      | PASS  |
 | blog     	| models.py     | PASS  |
 | blog     	| test_forms.py | PASS  |
 | blog      | test_views.py | PASS  |
@@ -321,11 +325,11 @@ I used the [Code Institute PEP8 Linter](https://pep8ci.herokuapp.com/) to valida
 | about     | test_forms.py | PASS  |
 | about     | urls.py       | PASS  |
 | about     | views.py      | PASS  |
-| home     	| apps.py     	| PASS	|
+| home     	| apps.py     	 | PASS	|
 | home     	| settings.py   | PASS 	|
 | home     	| urls.py       | PASS  |
-| home     	| utils.py     	| PASS	|
-| home     	| views.py    	| PASS  |
+| home     	| utils.py      | PASS	|
+| home     	| views.py      | PASS  |
 
 ## Lighthouse Testing (Desktop and Mobile)
 Lighthouse testing was successful for all pages, meeting accessibility requirements.
@@ -408,9 +412,9 @@ About Page:
 | Find Out More  | Fill out the 'email' field           | User adds email to field. If missing the user sees a warning |                   |           |
 |                |                                      | 'Please include an @ in the email address'                   | Same as expected  | PASS      |
 | Find Out More  | Fill out the 'message' field         | User adds name to field. If missing the user sees a warning  |                   |           |
-|                |                                      | 'Please fill in this field'                                  |                   | PASS      |
+|                |                                      | 'Please fill in this field'                                  | Same as expected  | PASS      |
 | Submit Button  | Click the 'Submit' button            | User sees a pop up: 'We have received your booking request!  |                   |           |
-|                |                                      | We will respond shortly.'                                    |                   |           |
+|                |                                      | We will respond shortly.'                                    | Same as expected  | PASS      |
 
 
 Register Page:
@@ -443,6 +447,27 @@ Register Page:
 
 Log In Page:
 
+| Test Name      | Steps                                 | Expected Result                                                          | Actual Result     | Pass/Fail |
+|----------------|---------------------------------------|--------------------------------------------------------------------------|-------------------|-----------|
+| Username       | User inputs their registered username | Username field should be populated.                                      | Same as expected  | PASS      |
+| Password       | User inputs their password            | If password correct user sees: 'Successfully signed in as 'user' and nav |                   |           |
+| Password       | User inputs their password            | bar shows log out tab.                                                   | Same as expected  | PASS      |
+| Remember Me    | User checks box                       | If checked, user remembered for next sign in.                            | Same as expected  | PASS      |
+
+Blog Page:
+
+| Test Name      | Steps                                 | Expected Result                                                          | Actual Result     | Pass/Fail |
+|----------------|---------------------------------------|--------------------------------------------------------------------------|-------------------|-----------|
+| Click on post  | User selects blog to read             | User is directed to blog post                                            | Same as expected  | PASS      |
+| Comment        | User can leave a comment              | User writes comment and clicks submit. The user sees a pop up 'Comment   |                   |           |
+|                |                                       | submitted and awaiting approval'.                                        | Same as expected  | PASS      |
+| Edit Comment   | User can click on edit button         | User clicks update button and sees the message 'Comment Updated!'        | Same as expected  | PASS      |
+| Delete Comment | User can click on delete button       | User clicks delete and sees the message Are you sure you want to delete  |                   |           |
+|                |                                       | your comment? This action cannot be undone.' User clicks close or delete.| Same as expected  | PASS      |
+|                |                                       | If user confirms delete they see 'Comment deleted!'                      | Same as expected  | PASS      |
+|                |                                       | If user clicks close, the message stays as awaiting approval.            | Same as expected  | PASS      |
+| Like a post    | User can click on hte heart emoji     | If the user clicks the heart emoji it shows as liked. If clicked again   |                   |           |
+|                |                                       | the like is removed.                                                     | Same as expected  | PASS      |
 
 
 ## Bugs
