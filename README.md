@@ -269,7 +269,7 @@ All user stories worked as expected with the exception of the 'Edit Comment' fun
 
 ## Browser Compatibility
 
-The site works as intended on Google Chrome and Safari and across mobile devices. This was tested with the Google Developer Tools.
+The site works as intended on Google Chrome and Safari and across mobile devices. This was tested with the Google Developer Tools and was found to be responsive.
 
 
 ## Validations
@@ -369,11 +369,14 @@ Home Page:
 
 About Page:
 
-| Test Name      | Steps                                | Expected Result                               | Actual Result     | Pass/Fail |
-|----------------|--------------------------------------|-----------------------------------------------|-------------------|-----------|
-| Book a Holiday | Click on the 'Book a Holiday" button | User is redirected to the about page.         | Same as expected  | PASS      |
-| Read the Blog  | Click on the 'Read the Blog" button  | User is redirected to the blog page.          | Same as expected  | PASS      |
-| Submit         | Click on the 'Submit" button         | User successfully submits an enquiry.         | Same as expected  | PASS      |
+| Test Name      | Steps                                | Expected Result                                      | Actual Result     | Pass/Fail |
+|----------------|--------------------------------------|------------------------------------------------------|-------------------|-----------|
+| Book a Holiday | Click on the 'Book a Holiday" button | User is redirected to the about page.                | Same as expected  | PASS      |
+| Read the Blog  | Click on the 'Read the Blog" button  | User is redirected to the blog page.                 | Same as expected  | PASS      |
+| Submit         | Click on the 'Submit" button         | User successfully submits an enquiry.                | Same as expected  | PASS      |
+| Admin database | Messages are stored in the database  | Admin can see and store messages within About section| Same as expected  | PASS      |
+| Admin read     | Messages can be marked as read via   |                                                      |                   |           |
+|                | ticking a 'read' checkbox.           | Message is marked with a green tick box in the inbox | Same as expected  | PASS      |
 
 Register Page:
 
@@ -471,6 +474,8 @@ Blog Page:
 | Click on post  | User selects blog to read             | User is directed to blog post                                            | Same as expected  | PASS      |
 | Comment        | User can leave a comment              | User writes comment and clicks submit. The user sees a pop up 'Comment   |                   |           |
 |                |                                       | submitted and awaiting approval'.                                        | Same as expected  | PASS      |
+| Admin comment  | Admin can click on comments to view   | Admin can see all comments added.                                        | Same as expected  | PASS      |
+| Admin approve  | Admin can click 'approved' checkbox   | Comment is published successfully from comments section.                 | Same as expected  | PASS      |
 | Edit Comment   | User can click on edit button         | User clicks update button and sees the message 'Comment Updated!'        | Same as expected  | PASS      |
 | Delete Comment | User can click on delete button       | User clicks delete and sees the message Are you sure you want to delete  |                   |           |
 |                |                                       | your comment? This action cannot be undone.' User clicks close or delete.| Same as expected  | PASS      |
@@ -478,7 +483,14 @@ Blog Page:
 |                |                                       | If user clicks close, the message stays as awaiting approval.            | Same as expected  | PASS      |
 | Like a post    | User can click on the heart emoji     | If the user clicks the heart emoji it shows as liked. If clicked again   |                   |           |
 |                |                                       | the like is removed.                                                     | Same as expected  | PASS      |
-
+| Create post    |                                       |                                                                          |                   |           |
+| and management | Site Admin can create, read, update & | Admin can create a post by clicking 'Add post", read current posts, edit |                   |           |
+|                | and delete posts under Blog - Posts   | posts by clicking on the post link, save post by clicking 'save' and     |                   |           |
+|                |                                       | delete post by clicking 'delete'.                                        | Same as expected  | PASS      |
+| Draft Post     | Site Admin can draft a post after     |                                                                          |                   |           |           
+|                | clicking 'Add Post' then 'Save &      |Post saves and is accessible for further editing.                         |                   |           |
+|                | continue editing'                     |                                                                          | Same as expected  | PASS      |           | Admin Comments | Under comments Admin can approve or   | Comment is approved and saved to show on website or is not approved and  |                   |           |
+|                | disapprove via checkbox tick.         |  remains hidden.                                                         | Same as expected  | PASS      |     
 
 ## Bugs
 1. Using the Google Dev Tools I picked up a 'null' error for GetElementbyId when the user was editing a post. I realised that get GetAttribute was not complete, after amending the code, the Developer Tools picked up no further errors.
